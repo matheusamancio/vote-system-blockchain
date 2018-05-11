@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDB6FB0620A54DB300BFA276 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6FB0520A54DB300BFA276 /* BaseViewController.swift */; };
 		DDE903E420A549BE00EE3A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE903E320A549BE00EE3A54 /* AppDelegate.swift */; };
 		DDE903E620A549BE00EE3A54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE903E520A549BE00EE3A54 /* ViewController.swift */; };
 		DDE903E920A549BE00EE3A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE903E720A549BE00EE3A54 /* Main.storyboard */; };
 		DDE903EB20A549C000EE3A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDE903EA20A549C000EE3A54 /* Assets.xcassets */; };
 		DDE903EE20A549C000EE3A54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE903EC20A549C000EE3A54 /* LaunchScreen.storyboard */; };
+		EA8C1FFF8FBA9DB8AD39B3B8 /* Pods_vote_system_blockchain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C0245214A3C12EAC691FD8 /* Pods_vote_system_blockchain.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6AC30C67DD12765FC0E1116E /* Pods-vote-system-blockchain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vote-system-blockchain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vote-system-blockchain/Pods-vote-system-blockchain.debug.xcconfig"; sourceTree = "<group>"; };
+		A9C0245214A3C12EAC691FD8 /* Pods_vote_system_blockchain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vote_system_blockchain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0744E8750537CFA7E8E1B13 /* Pods-vote-system-blockchain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vote-system-blockchain.release.xcconfig"; path = "Pods/Target Support Files/Pods-vote-system-blockchain/Pods-vote-system-blockchain.release.xcconfig"; sourceTree = "<group>"; };
+		DDB6FB0520A54DB300BFA276 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DDE903E020A549BE00EE3A54 /* vote-system-blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vote-system-blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE903E320A549BE00EE3A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDE903E520A549BE00EE3A54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8C1FFF8FBA9DB8AD39B3B8 /* Pods_vote_system_blockchain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3BC8B20CD06B46DAC5C6BB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AC30C67DD12765FC0E1116E /* Pods-vote-system-blockchain.debug.xcconfig */,
+				D0744E8750537CFA7E8E1B13 /* Pods-vote-system-blockchain.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DDE903D720A549BE00EE3A54 = {
 			isa = PBXGroup;
 			children = (
 				DDE903E220A549BE00EE3A54 /* vote-system-blockchain */,
 				DDE903E120A549BE00EE3A54 /* Products */,
+				D3BC8B20CD06B46DAC5C6BB6 /* Pods */,
+				F5F813C8D2C787EEBBAC05DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +78,17 @@
 				DDE903EA20A549C000EE3A54 /* Assets.xcassets */,
 				DDE903EC20A549C000EE3A54 /* LaunchScreen.storyboard */,
 				DDE903EF20A549C000EE3A54 /* Info.plist */,
+				DDB6FB0520A54DB300BFA276 /* BaseViewController.swift */,
 			);
 			path = "vote-system-blockchain";
+			sourceTree = "<group>";
+		};
+		F5F813C8D2C787EEBBAC05DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9C0245214A3C12EAC691FD8 /* Pods_vote_system_blockchain.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDE903F220A549C000EE3A54 /* Build configuration list for PBXNativeTarget "vote-system-blockchain" */;
 			buildPhases = (
+				2565CBAB7C5D3618AA2D9C9A /* [CP] Check Pods Manifest.lock */,
 				DDE903DC20A549BE00EE3A54 /* Sources */,
 				DDE903DD20A549BE00EE3A54 /* Frameworks */,
 				DDE903DE20A549BE00EE3A54 /* Resources */,
+				3FEC7D53471C616985136CBC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +159,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2565CBAB7C5D3618AA2D9C9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vote-system-blockchain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FEC7D53471C616985136CBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-vote-system-blockchain/Pods-vote-system-blockchain-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vote-system-blockchain/Pods-vote-system-blockchain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DDE903DC20A549BE00EE3A54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +205,7 @@
 			files = (
 				DDE903E620A549BE00EE3A54 /* ViewController.swift in Sources */,
 				DDE903E420A549BE00EE3A54 /* AppDelegate.swift in Sources */,
+				DDB6FB0620A54DB300BFA276 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +347,7 @@
 		};
 		DDE903F320A549C000EE3A54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AC30C67DD12765FC0E1116E /* Pods-vote-system-blockchain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +366,7 @@
 		};
 		DDE903F420A549C000EE3A54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0744E8750537CFA7E8E1B13 /* Pods-vote-system-blockchain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
