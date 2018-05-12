@@ -13,10 +13,11 @@ import SnapKit
 class ViewController: BaseViewController {
     
     private let titleLabel: UILabel = {
-        let l = UILabel()
-        l.text = "Bem vindo,\ncaro eleitor!"
+        let l = UILabel.title()
+        l.text = "Preparado para \nEscolher o rumo do \nBrasil?"
         l.textColor = .black
-        l.numberOfLines = 2
+        l.numberOfLines = 3
+        l.textAlignment = .left
         return l
     }()
     

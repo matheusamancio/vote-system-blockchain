@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD0C725F20A75E23009F82EB /* LabelStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C725E20A75E23009F82EB /* LabelStyles.swift */; };
+		DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C726020A75E4F009F82EB /* FontStyles.swift */; };
 		DDB6FB0620A54DB300BFA276 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6FB0520A54DB300BFA276 /* BaseViewController.swift */; };
 		DDE903E420A549BE00EE3A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE903E320A549BE00EE3A54 /* AppDelegate.swift */; };
 		DDE903E620A549BE00EE3A54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE903E520A549BE00EE3A54 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 		6AC30C67DD12765FC0E1116E /* Pods-vote-system-blockchain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vote-system-blockchain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vote-system-blockchain/Pods-vote-system-blockchain.debug.xcconfig"; sourceTree = "<group>"; };
 		A9C0245214A3C12EAC691FD8 /* Pods_vote_system_blockchain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vote_system_blockchain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0744E8750537CFA7E8E1B13 /* Pods-vote-system-blockchain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vote-system-blockchain.release.xcconfig"; path = "Pods/Target Support Files/Pods-vote-system-blockchain/Pods-vote-system-blockchain.release.xcconfig"; sourceTree = "<group>"; };
+		DD0C725E20A75E23009F82EB /* LabelStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyles.swift; sourceTree = "<group>"; };
+		DD0C726020A75E4F009F82EB /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
 		DDB6FB0520A54DB300BFA276 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DDE903E020A549BE00EE3A54 /* vote-system-blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vote-system-blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE903E320A549BE00EE3A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 				DDE903EC20A549C000EE3A54 /* LaunchScreen.storyboard */,
 				DDE903EF20A549C000EE3A54 /* Info.plist */,
 				DDB6FB0520A54DB300BFA276 /* BaseViewController.swift */,
+				DD0C725E20A75E23009F82EB /* LabelStyles.swift */,
+				DD0C726020A75E4F009F82EB /* FontStyles.swift */,
 			);
 			path = "vote-system-blockchain";
 			sourceTree = "<group>";
@@ -203,6 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD0C725F20A75E23009F82EB /* LabelStyles.swift in Sources */,
+				DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */,
 				DDE903E620A549BE00EE3A54 /* ViewController.swift in Sources */,
 				DDE903E420A549BE00EE3A54 /* AppDelegate.swift in Sources */,
 				DDB6FB0620A54DB300BFA276 /* BaseViewController.swift in Sources */,
