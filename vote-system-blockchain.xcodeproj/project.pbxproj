@@ -10,6 +10,8 @@
 		DD0C725F20A75E23009F82EB /* LabelStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C725E20A75E23009F82EB /* LabelStyles.swift */; };
 		DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C726020A75E4F009F82EB /* FontStyles.swift */; };
 		DDB6FB0620A54DB300BFA276 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6FB0520A54DB300BFA276 /* BaseViewController.swift */; };
+		DDB87E6120E45AC3004207A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB87E6020E45AC3004207A3 /* User.swift */; };
+		DDB87E6320E45BF3004207A3 /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB87E6220E45BF3004207A3 /* Candidate.swift */; };
 		DDE903E420A549BE00EE3A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE903E320A549BE00EE3A54 /* AppDelegate.swift */; };
 		DDE903E620A549BE00EE3A54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE903E520A549BE00EE3A54 /* ViewController.swift */; };
 		DDE903E920A549BE00EE3A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE903E720A549BE00EE3A54 /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		DD0C725E20A75E23009F82EB /* LabelStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyles.swift; sourceTree = "<group>"; };
 		DD0C726020A75E4F009F82EB /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
 		DDB6FB0520A54DB300BFA276 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DDB87E6020E45AC3004207A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DDB87E6220E45BF3004207A3 /* Candidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidate.swift; sourceTree = "<group>"; };
 		DDE903E020A549BE00EE3A54 /* vote-system-blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vote-system-blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE903E320A549BE00EE3A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDE903E520A549BE00EE3A54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,9 +59,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DDB87E5F20E45A59004207A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDB87E6020E45AC3004207A3 /* User.swift */,
+				DDB87E6220E45BF3004207A3 /* Candidate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DDE903D720A549BE00EE3A54 = {
 			isa = PBXGroup;
 			children = (
+				DDB87E5F20E45A59004207A3 /* Models */,
 				DDE903E220A549BE00EE3A54 /* vote-system-blockchain */,
 				DDE903E120A549BE00EE3A54 /* Products */,
 				D3BC8B20CD06B46DAC5C6BB6 /* Pods */,
@@ -211,7 +225,9 @@
 			files = (
 				DD0C725F20A75E23009F82EB /* LabelStyles.swift in Sources */,
 				DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */,
+				DDB87E6120E45AC3004207A3 /* User.swift in Sources */,
 				DDE903E620A549BE00EE3A54 /* ViewController.swift in Sources */,
+				DDB87E6320E45BF3004207A3 /* Candidate.swift in Sources */,
 				DDE903E420A549BE00EE3A54 /* AppDelegate.swift in Sources */,
 				DDB6FB0620A54DB300BFA276 /* BaseViewController.swift in Sources */,
 			);
