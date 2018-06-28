@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 
-class ViewController: BaseViewController {
+class CpfViewController: BaseViewController {
     
     private let titleLabel: UILabel = {
         let l = UILabel.title()
@@ -48,6 +48,7 @@ class ViewController: BaseViewController {
         button.titleLabel?.textAlignment = .center
         button.backgroundColor = UIColor.gray
         button.layer.cornerRadius = 4
+        button.addTarget(self, action: #selector(goToPasswordVC), for: .touchUpInside)
         return button
     }()
     
@@ -60,8 +61,11 @@ class ViewController: BaseViewController {
         view.addSubview(lineCpfView)
         view.addSubview(cpfTextField)
         view.addSubview(validateButton)
-
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    @objc func goToPasswordVC(sender: UIButton!) {
+        let passVC = PasswordViewController()
+        self.navigationController?.pushViewController(passVC, animated: true)
     }
     override func setupConstraints() {
         
@@ -101,12 +105,13 @@ class ViewController: BaseViewController {
             make.right.equalToSuperview().offset(-35)
             make.height.equalTo(50)
         }
-        
     }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     
 }
