@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DD0C725F20A75E23009F82EB /* LabelStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C725E20A75E23009F82EB /* LabelStyles.swift */; };
 		DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C726020A75E4F009F82EB /* FontStyles.swift */; };
+		DD9C8C0F20F5839D00E5579D /* PrivateKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C8C0E20F5839D00E5579D /* PrivateKeyViewController.swift */; };
 		DDB6FB0620A54DB300BFA276 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6FB0520A54DB300BFA276 /* BaseViewController.swift */; };
 		DDB87E6120E45AC3004207A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB87E6020E45AC3004207A3 /* User.swift */; };
 		DDB87E6320E45BF3004207A3 /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB87E6220E45BF3004207A3 /* Candidate.swift */; };
@@ -27,6 +28,7 @@
 		D0744E8750537CFA7E8E1B13 /* Pods-vote-system-blockchain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vote-system-blockchain.release.xcconfig"; path = "Pods/Target Support Files/Pods-vote-system-blockchain/Pods-vote-system-blockchain.release.xcconfig"; sourceTree = "<group>"; };
 		DD0C725E20A75E23009F82EB /* LabelStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyles.swift; sourceTree = "<group>"; };
 		DD0C726020A75E4F009F82EB /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
+		DD9C8C0E20F5839D00E5579D /* PrivateKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKeyViewController.swift; sourceTree = "<group>"; };
 		DDB6FB0520A54DB300BFA276 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DDB87E6020E45AC3004207A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DDB87E6220E45BF3004207A3 /* Candidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DD9C8C0C20F5833300E5579D /* VoteFlow */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C8C0D20F5834700E5579D /* PrivateKeyVote */,
+			);
+			path = VoteFlow;
+			sourceTree = "<group>";
+		};
+		DD9C8C0D20F5834700E5579D /* PrivateKeyVote */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C8C0E20F5839D00E5579D /* PrivateKeyViewController.swift */,
+			);
+			path = PrivateKeyVote;
+			sourceTree = "<group>";
+		};
 		DDB87E5F20E45A59004207A3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +91,7 @@
 		DDB87E6420E4604D004207A3 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				DD9C8C0C20F5833300E5579D /* VoteFlow */,
 				DDB87E6520E460B1004207A3 /* SignupFlow */,
 			);
 			path = Scenes;
@@ -258,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD9C8C0F20F5839D00E5579D /* PrivateKeyViewController.swift in Sources */,
 				DD0C725F20A75E23009F82EB /* LabelStyles.swift in Sources */,
 				DDB87E6920E465D3004207A3 /* PasswordViewController.swift in Sources */,
 				DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */,

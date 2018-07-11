@@ -14,7 +14,7 @@ class PasswordViewController: BaseViewController {
         let l = UILabel.title()
         l.text = "Agora escolha \numa senha"
         l.textColor = .black
-        l.numberOfLines = 3
+        l.numberOfLines = 2
         l.textAlignment = .left
         return l
     }()
@@ -46,6 +46,7 @@ class PasswordViewController: BaseViewController {
         button.titleLabel?.textAlignment = .center
         button.backgroundColor = UIColor.gray
         button.layer.cornerRadius = 4
+        button.addTarget(self, action: #selector(goToVoteNumber), for: .touchUpInside)
         return button
     }()
     
@@ -61,6 +62,12 @@ class PasswordViewController: BaseViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    @objc func goToVoteNumber(sender: UIButton!) {
+        let privateVC = PrivateKeyViewController()
+        self.navigationController?.pushViewController(privateVC, animated: true)
+    }
+    
     override func setupConstraints() {
         
         // MARK: titleLabel
