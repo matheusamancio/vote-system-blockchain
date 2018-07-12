@@ -131,7 +131,6 @@ class PrivateKeyViewController: BaseViewController {
             make.height.equalTo(44)
         }
         
-        
         //MARK: validateButton
         validateButton.snp.makeConstraints { (make) in
             make.bottom.equalToSuperview().offset(-11)

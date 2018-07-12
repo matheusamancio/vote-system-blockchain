@@ -14,6 +14,9 @@
 		DDB87E6120E45AC3004207A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB87E6020E45AC3004207A3 /* User.swift */; };
 		DDB87E6320E45BF3004207A3 /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB87E6220E45BF3004207A3 /* Candidate.swift */; };
 		DDB87E6920E465D3004207A3 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB87E6820E465D3004207A3 /* PasswordViewController.swift */; };
+		DDD8718620F81383005D556D /* CandidatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8718520F81383005D556D /* CandidatesViewController.swift */; };
+		DDD8718820F81411005D556D /* CandidatesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8718720F81411005D556D /* CandidatesTableCell.swift */; };
+		DDD8718E20F814A1005D556D /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8718D20F814A1005D556D /* BaseTableViewCell.swift */; };
 		DDE903E420A549BE00EE3A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE903E320A549BE00EE3A54 /* AppDelegate.swift */; };
 		DDE903E620A549BE00EE3A54 /* CpfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE903E520A549BE00EE3A54 /* CpfViewController.swift */; };
 		DDE903E920A549BE00EE3A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE903E720A549BE00EE3A54 /* Main.storyboard */; };
@@ -33,6 +36,9 @@
 		DDB87E6020E45AC3004207A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DDB87E6220E45BF3004207A3 /* Candidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidate.swift; sourceTree = "<group>"; };
 		DDB87E6820E465D3004207A3 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		DDD8718520F81383005D556D /* CandidatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesViewController.swift; sourceTree = "<group>"; };
+		DDD8718720F81411005D556D /* CandidatesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesTableCell.swift; sourceTree = "<group>"; };
+		DDD8718D20F814A1005D556D /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseTableViewCell.swift; path = ../../BaseTableViewCell.swift; sourceTree = "<group>"; };
 		DDE903E020A549BE00EE3A54 /* vote-system-blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vote-system-blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE903E320A549BE00EE3A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDE903E520A549BE00EE3A54 /* CpfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CpfViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +72,7 @@
 		DD9C8C0C20F5833300E5579D /* VoteFlow */ = {
 			isa = PBXGroup;
 			children = (
+				DDD8718420F81368005D556D /* Candidates */,
 				DD9C8C0D20F5834700E5579D /* PrivateKeyVote */,
 			);
 			path = VoteFlow;
@@ -122,6 +129,15 @@
 			path = Password;
 			sourceTree = "<group>";
 		};
+		DDD8718420F81368005D556D /* Candidates */ = {
+			isa = PBXGroup;
+			children = (
+				DDD8718520F81383005D556D /* CandidatesViewController.swift */,
+				DDD8718720F81411005D556D /* CandidatesTableCell.swift */,
+			);
+			path = Candidates;
+			sourceTree = "<group>";
+		};
 		DDE903D720A549BE00EE3A54 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +164,7 @@
 				DDE903E320A549BE00EE3A54 /* AppDelegate.swift */,
 				DDE903E720A549BE00EE3A54 /* Main.storyboard */,
 				DDE903EA20A549C000EE3A54 /* Assets.xcassets */,
+				DDD8718D20F814A1005D556D /* BaseTableViewCell.swift */,
 				DDE903EC20A549C000EE3A54 /* LaunchScreen.storyboard */,
 				DDE903EF20A549C000EE3A54 /* Info.plist */,
 				DDB6FB0520A54DB300BFA276 /* BaseViewController.swift */,
@@ -277,8 +294,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD8718820F81411005D556D /* CandidatesTableCell.swift in Sources */,
+				DDD8718620F81383005D556D /* CandidatesViewController.swift in Sources */,
 				DD9C8C0F20F5839D00E5579D /* PrivateKeyViewController.swift in Sources */,
 				DD0C725F20A75E23009F82EB /* LabelStyles.swift in Sources */,
+				DDD8718E20F814A1005D556D /* BaseTableViewCell.swift in Sources */,
 				DDB87E6920E465D3004207A3 /* PasswordViewController.swift in Sources */,
 				DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */,
 				DDB87E6120E45AC3004207A3 /* User.swift in Sources */,
