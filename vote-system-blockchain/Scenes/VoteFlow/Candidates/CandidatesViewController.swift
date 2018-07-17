@@ -11,7 +11,7 @@ import UIKit
 class CandidatesViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource  {
     private let tableView: UITableView = {
         let tb = UITableView()
-        tb.backgroundColor = .red
+        tb.backgroundColor = .white
         tb.rowHeight = 77
         tb.register(CandidatesTableCell.self, forCellReuseIdentifier: "CandidatesTableCell")
         tb.separatorColor = .clear
@@ -38,11 +38,14 @@ class CandidatesViewController: BaseViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CandidatesTableCell", for: indexPath as IndexPath)
-        cell.textLabel!.text = "teste"
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CandidatesTableCell", for: indexPath as IndexPath) as? CandidatesTableCell
+        cell?.nameLabel.text = "José Nascimento"
+        cell?.partyLabel.text = "PLA"
+        cell?.viceLabel.text = "Marcel Valverde"
+
+        cell?.picImageView.image = UIImage(named: "cand1")
+        return cell!
     }
-    
     
     
     override func setupConstraints() {

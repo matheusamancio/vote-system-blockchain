@@ -75,6 +75,7 @@ class PrivateKeyViewController: BaseViewController {
         button.titleLabel?.textAlignment = .center
         button.backgroundColor = UIColor.gray
         button.layer.cornerRadius = 4
+        button.addTarget(self, action: #selector(goToCandidates), for: .touchUpInside)
         return button
     }()
     
@@ -140,9 +141,9 @@ class PrivateKeyViewController: BaseViewController {
         }
         
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func goToCandidates(sender: UIButton!) {
+        let canVC = CandidatesViewController()
+        self.navigationController?.pushViewController(canVC, animated: true)
     }
 
 }
