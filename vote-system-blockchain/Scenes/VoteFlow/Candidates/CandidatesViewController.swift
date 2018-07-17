@@ -30,7 +30,7 @@ class CandidatesViewController: BaseViewController, UITableViewDelegate, UITable
         // Do any additional setup after loading the view.
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Num: \(indexPath.row)")
+        goToCandidate()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -45,6 +45,12 @@ class CandidatesViewController: BaseViewController, UITableViewDelegate, UITable
 
         cell?.picImageView.image = UIImage(named: "cand1")
         return cell!
+    }
+    
+    func goToCandidate(){
+        let chosenVC = ChosenCandidateViewController()
+        self.navigationController?.pushViewController(chosenVC, animated: true)
+
     }
     
     

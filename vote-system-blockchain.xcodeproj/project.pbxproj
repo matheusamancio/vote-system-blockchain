@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD02674120FE9AA5004D5125 /* ChosenCandidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02674020FE9AA5004D5125 /* ChosenCandidateViewController.swift */; };
 		DD0C725F20A75E23009F82EB /* LabelStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C725E20A75E23009F82EB /* LabelStyles.swift */; };
 		DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C726020A75E4F009F82EB /* FontStyles.swift */; };
 		DD9C8C0F20F5839D00E5579D /* PrivateKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C8C0E20F5839D00E5579D /* PrivateKeyViewController.swift */; };
@@ -29,6 +30,7 @@
 		6AC30C67DD12765FC0E1116E /* Pods-vote-system-blockchain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vote-system-blockchain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vote-system-blockchain/Pods-vote-system-blockchain.debug.xcconfig"; sourceTree = "<group>"; };
 		A9C0245214A3C12EAC691FD8 /* Pods_vote_system_blockchain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vote_system_blockchain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0744E8750537CFA7E8E1B13 /* Pods-vote-system-blockchain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vote-system-blockchain.release.xcconfig"; path = "Pods/Target Support Files/Pods-vote-system-blockchain/Pods-vote-system-blockchain.release.xcconfig"; sourceTree = "<group>"; };
+		DD02674020FE9AA5004D5125 /* ChosenCandidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenCandidateViewController.swift; sourceTree = "<group>"; };
 		DD0C725E20A75E23009F82EB /* LabelStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyles.swift; sourceTree = "<group>"; };
 		DD0C726020A75E4F009F82EB /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
 		DD9C8C0E20F5839D00E5579D /* PrivateKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKeyViewController.swift; sourceTree = "<group>"; };
@@ -69,9 +71,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DD02673F20FE9A82004D5125 /* Chosen Candidate */ = {
+			isa = PBXGroup;
+			children = (
+				DD02674020FE9AA5004D5125 /* ChosenCandidateViewController.swift */,
+			);
+			path = "Chosen Candidate";
+			sourceTree = "<group>";
+		};
 		DD9C8C0C20F5833300E5579D /* VoteFlow */ = {
 			isa = PBXGroup;
 			children = (
+				DD02673F20FE9A82004D5125 /* Chosen Candidate */,
 				DDD8718420F81368005D556D /* Candidates */,
 				DD9C8C0D20F5834700E5579D /* PrivateKeyVote */,
 			);
@@ -298,6 +309,7 @@
 				DDD8718620F81383005D556D /* CandidatesViewController.swift in Sources */,
 				DD9C8C0F20F5839D00E5579D /* PrivateKeyViewController.swift in Sources */,
 				DD0C725F20A75E23009F82EB /* LabelStyles.swift in Sources */,
+				DD02674120FE9AA5004D5125 /* ChosenCandidateViewController.swift in Sources */,
 				DDD8718E20F814A1005D556D /* BaseTableViewCell.swift in Sources */,
 				DDB87E6920E465D3004207A3 /* PasswordViewController.swift in Sources */,
 				DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */,
