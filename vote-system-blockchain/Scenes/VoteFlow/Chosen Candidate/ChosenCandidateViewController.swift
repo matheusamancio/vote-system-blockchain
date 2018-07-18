@@ -77,7 +77,7 @@ class ChosenCandidateViewController: BaseViewController {
         
         // MARK: picImageView
         picImageView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(45)
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(10)
             make.height.equalTo(137)
             make.width.equalTo(110)
             make.centerX.equalToSuperview()

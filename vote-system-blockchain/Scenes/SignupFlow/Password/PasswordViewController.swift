@@ -71,7 +71,7 @@ class PasswordViewController: BaseViewController {
         
         // MARK: headerLabel
         headerLabel.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(250)
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(44)
             make.left.equalToSuperview().offset(35)
             make.right.equalToSuperview().offset(-35)
         }
