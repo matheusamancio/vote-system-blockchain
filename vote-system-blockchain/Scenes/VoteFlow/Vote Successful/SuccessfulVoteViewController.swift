@@ -1,21 +1,20 @@
 //
-//  ChosenCandidateViewController.swift
+//  SuccessfulVoteViewController.swift
 //  vote-system-blockchain
 //
-//  Created by Matheus Amancio Seixeiro on 17/07/2018.
+//  Created by Matheus Amancio Seixeiro on 18/07/2018.
 //  Copyright © 2018 Matheus Amancio Seixeiro. All rights reserved.
 //
 
 import UIKit
 
-class ChosenCandidateViewController: BaseViewController {
-    
-    
+class SuccessfulVoteViewController: BaseViewController {
+
     private let nameLabel: UILabel = {
         let l = UILabel.title()
-        l.text = "José Nascimento"
+        l.text = "Seu voto foi Registrado com\n sucesso"
         l.textColor = .black
-        l.numberOfLines = 1
+        l.numberOfLines = 2
         l.textAlignment = .center
         return l
     }()
@@ -45,18 +44,8 @@ class ChosenCandidateViewController: BaseViewController {
         return iv
     }()
     
+    
 
-    fileprivate let validateButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Próxima Etapa", for: .normal)
-        button.setTitleColor(.white, for: UIControlState.normal)
-        button.titleLabel?.font = UIFont.button
-        button.titleLabel?.textAlignment = .center
-        button.backgroundColor = UIColor.gray
-        button.layer.cornerRadius = 4
-        button.addTarget(self, action: #selector(goTosuccsessful), for: .touchUpInside)
-        return button
-    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +54,6 @@ class ChosenCandidateViewController: BaseViewController {
         view.addSubview(partyLabel)
         view.addSubview(viceLabel)
         view.addSubview(picImageView)
-        view.addSubview(validateButton)
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -99,23 +87,5 @@ class ChosenCandidateViewController: BaseViewController {
             make.left.equalToSuperview()
             make.right.equalToSuperview()
         }
-        
-        
-        //MARK: validateButton
-        validateButton.snp.makeConstraints { (make) in
-            make.bottom.equalToSuperview().offset(-11)
-            make.left.equalToSuperview().offset(35)
-            make.right.equalToSuperview().offset(-35)
-            make.height.equalTo(50)
-        }
-        
     }
-    @objc func goTosuccsessful(sender: UIButton!) {
-        print(#function,"bt pressed")
-        let succVC = SuccessfulVoteViewController()
-        self.navigationController?.pushViewController(succVC, animated: true)
-
-
-    }
-    
 }
