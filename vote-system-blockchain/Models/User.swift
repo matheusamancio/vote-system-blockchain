@@ -9,9 +9,12 @@
 import Foundation
 
 struct User{
-    var CPF: Int
-    var gender: String
-    var sexual_choice: String
-    var age: Int
-    var curso: String
+    var cpf: Int
+    var password: Int
+    
+    init(cpf: Int, password: Int){
+        self.cpf = cpf
+        self.password = password
+    }
+    
 }

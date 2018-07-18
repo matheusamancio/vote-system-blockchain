@@ -10,10 +10,10 @@ import UIKit
 
 class ChosenCandidateViewController: BaseViewController {
     
+    var candidate: Candidate? = nil
     
     private let nameLabel: UILabel = {
         let l = UILabel.title()
-        l.text = "José Nascimento"
         l.textColor = .black
         l.numberOfLines = 1
         l.textAlignment = .center
@@ -22,7 +22,6 @@ class ChosenCandidateViewController: BaseViewController {
     
     private let partyLabel: UILabel = {
         let label = UILabel.subtitle()
-        label.text = "PLA"
         label.textColor = UIColor.black
         label.textAlignment = .center
         return label
@@ -30,7 +29,6 @@ class ChosenCandidateViewController: BaseViewController {
     
     private let viceLabel: UILabel = {
         let label = UILabel.subtitle()
-        label.text = "Marcel Valverde"
         label.textColor = UIColor.black
         label.textAlignment = .center
         return label
@@ -41,7 +39,6 @@ class ChosenCandidateViewController: BaseViewController {
         iv.layer.cornerRadius = 12
         iv.layer.masksToBounds = true
         iv.contentMode = .scaleAspectFill
-        iv.image = UIImage(named: "cand1")
         return iv
     }()
     
@@ -58,11 +55,17 @@ class ChosenCandidateViewController: BaseViewController {
         return button
     }()
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
 
+        nameLabel.text = candidate?.name
+        partyLabel.text = candidate?.party
+        viceLabel.text = candidate?.vice
+        picImageView.image = candidate?.photo
         
         view.backgroundColor = .white
         view.addSubview(nameLabel)
