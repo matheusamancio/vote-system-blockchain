@@ -23,6 +23,10 @@ class CandidatesViewController: BaseViewController, UITableViewDelegate, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Escolha um candidato"
+        setupNavigationMultilineTitle()
+        
         tableView.dataSource = self
         tableView.delegate = self
         view.addSubview(tableView)

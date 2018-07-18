@@ -60,6 +60,9 @@ class ChosenCandidateViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.largeTitleDisplayMode = .never
+
+        
         view.backgroundColor = .white
         view.addSubview(nameLabel)
         view.addSubview(partyLabel)

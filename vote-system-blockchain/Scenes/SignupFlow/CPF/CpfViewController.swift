@@ -9,18 +9,28 @@
 import UIKit
 import SnapKit
 
-
+extension UIViewController {
+    
+    func setupNavigationMultilineTitle() {
+        guard let navigationBar = self.navigationController?.navigationBar else { return }
+        for sview in navigationBar.subviews {
+            for ssview in sview.subviews {
+                guard let label = ssview as? UILabel else { break }
+                if label.text == self.title {
+                    label.numberOfLines = 0
+                    label.lineBreakMode = .byWordWrapping
+                    label.sizeToFit()
+                    UIView.animate(withDuration: 0.3, animations: {
+                        navigationBar.frame.size.height = 57 + label.frame.height
+                    })
+                }
+            }
+        }
+    }
+    
+}
 class CpfViewController: BaseViewController {
 
-
-    private let titleLabel: UILabel = {
-        let l = UILabel.title()
-        l.text = "Preparado para \nEscolher o rumo do \nBrasil?"
-        l.textColor = .black
-        l.numberOfLines = 3
-        l.textAlignment = .left
-        return l
-    }()
 
     private let headerLabel: UILabel = {
         let label = UILabel.subtitle()
@@ -53,10 +63,17 @@ class CpfViewController: BaseViewController {
         return button
     }()
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .automatic
+        
+        self.title = "Preparado para \nEscolher o rumo do \nBrasil?"
+        setupNavigationMultilineTitle()
+    
+
         view.backgroundColor = .white
-        view.addSubview(titleLabel)
         view.addSubview(headerLabel)
         view.addSubview(cpfTextField)
         view.addSubview(lineCpfView)
@@ -70,16 +87,10 @@ class CpfViewController: BaseViewController {
     }
     override func setupConstraints() {
 
-        // MARK: titleLabel
-        titleLabel.snp.makeConstraints { make in
-            make.left.equalToSuperview().offset(24)
-            make.top.equalToSuperview().offset(107)
-            make.right.equalToSuperview().offset(-24)
-        }
-
+        
         // MARK: headerLabel
         headerLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(titleLabel.snp.bottom).offset(44)
+            make.top.equalToSuperview().offset(250)
             make.left.equalToSuperview().offset(35)
             make.right.equalToSuperview().offset(-35)
         }

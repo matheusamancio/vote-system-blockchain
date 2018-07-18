@@ -9,15 +9,6 @@
 import UIKit
 
 class PrivateKeyViewController: BaseViewController {
-
-    private let titleLabel: UILabel = {
-        let l = UILabel.title()
-        l.text = "Hora de Votar"
-        l.textColor = .black
-        l.numberOfLines = 1
-        l.textAlignment = .left
-        return l
-    }()
     
     private let label1: UILabel = {
         let label = UILabel.subtitle()
@@ -81,8 +72,11 @@ class PrivateKeyViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Hora de Votar"
+        setupNavigationMultilineTitle()
+        
         view.backgroundColor = .white
-        view.addSubview(titleLabel)
         view.addSubview(label1)
         view.addSubview(label2)
         view.addSubview(label3)
@@ -96,16 +90,11 @@ class PrivateKeyViewController: BaseViewController {
     }
     override func setupConstraints() {
         
-        // MARK: titleLabel
-        titleLabel.snp.makeConstraints { make in
-            make.left.equalToSuperview().offset(24)
-            make.top.equalToSuperview().offset(107)
-            make.right.equalToSuperview().offset(-24)
-        }
+
         
         // MARK: label1
         label1.snp.makeConstraints { (make) in
-            make.top.equalTo(titleLabel.snp.bottom).offset(44)
+            make.top.equalToSuperview().offset(250)
             make.left.equalToSuperview().offset(35)
             make.right.equalToSuperview().offset(-35)
         }

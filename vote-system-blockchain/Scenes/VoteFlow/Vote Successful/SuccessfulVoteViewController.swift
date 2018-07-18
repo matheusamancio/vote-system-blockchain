@@ -49,6 +49,10 @@ class SuccessfulVoteViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.largeTitleDisplayMode = .always
+        self.title = "Parabéns!"
+        setupNavigationMultilineTitle()
+        
         view.backgroundColor = .white
         view.addSubview(nameLabel)
         view.addSubview(partyLabel)

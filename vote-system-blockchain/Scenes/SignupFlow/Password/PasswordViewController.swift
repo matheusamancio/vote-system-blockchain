@@ -10,14 +10,6 @@ import UIKit
 
 class PasswordViewController: BaseViewController {
 
-    private let titleLabel: UILabel = {
-        let l = UILabel.title()
-        l.text = "Agora escolha \numa senha"
-        l.textColor = .black
-        l.numberOfLines = 2
-        l.textAlignment = .left
-        return l
-    }()
     
     private let headerLabel: UILabel = {
         let label = UILabel.subtitle()
@@ -52,8 +44,11 @@ class PasswordViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Escolha uma Senha"
+        setupNavigationMultilineTitle()
+        
         view.backgroundColor = .white
-        view.addSubview(titleLabel)
         view.addSubview(headerLabel)
         view.addSubview(cpfTextField)
         view.addSubview(lineCpfView)
@@ -69,17 +64,11 @@ class PasswordViewController: BaseViewController {
     }
     
     override func setupConstraints() {
-        
-        // MARK: titleLabel
-        titleLabel.snp.makeConstraints { make in
-            make.left.equalToSuperview().offset(24)
-            make.top.equalToSuperview().offset(107)
-            make.right.equalToSuperview().offset(-24)
-        }
+
         
         // MARK: headerLabel
         headerLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(titleLabel.snp.bottom).offset(44)
+            make.top.equalToSuperview().offset(250)
             make.left.equalToSuperview().offset(35)
             make.right.equalToSuperview().offset(-35)
         }
