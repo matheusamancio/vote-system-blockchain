@@ -75,6 +75,8 @@ class PrivateKeyViewController: BaseViewController {
         
         self.title = "Hora de Votar"
         setupNavigationMultilineTitle()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
         
         view.backgroundColor = .white
         view.addSubview(label1)

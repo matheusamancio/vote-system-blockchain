@@ -9,7 +9,7 @@
 import UIKit
 
 class PasswordViewController: BaseViewController {
-
+    
     
     private let headerLabel: UILabel = {
         let label = UILabel.subtitle()
@@ -47,6 +47,9 @@ class PasswordViewController: BaseViewController {
         
         self.title = "Escolha uma Senha"
         setupNavigationMultilineTitle()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
+        
         
         view.backgroundColor = .white
         view.addSubview(headerLabel)
@@ -64,7 +67,7 @@ class PasswordViewController: BaseViewController {
     }
     
     override func setupConstraints() {
-
+        
         
         // MARK: headerLabel
         headerLabel.snp.makeConstraints { (make) in

@@ -61,6 +61,7 @@ class ChosenCandidateViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
 
         
         view.backgroundColor = .white

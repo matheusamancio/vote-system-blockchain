@@ -26,7 +26,8 @@ class CandidatesViewController: BaseViewController, UITableViewDelegate, UITable
         
         self.title = "Escolha um candidato"
         setupNavigationMultilineTitle()
-        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
         tableView.dataSource = self
         tableView.delegate = self
         view.addSubview(tableView)

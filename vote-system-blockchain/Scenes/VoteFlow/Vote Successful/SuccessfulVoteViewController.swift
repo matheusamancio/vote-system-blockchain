@@ -52,7 +52,8 @@ class SuccessfulVoteViewController: BaseViewController {
         navigationItem.largeTitleDisplayMode = .always
         self.title = "Parabéns!"
         setupNavigationMultilineTitle()
-        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
         view.backgroundColor = .white
         view.addSubview(nameLabel)
         view.addSubview(partyLabel)
