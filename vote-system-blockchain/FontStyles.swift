@@ -13,10 +13,13 @@ import UIKit
 extension UIFont {
     static let title: UIFont = UIFont.boldSystemFont(ofSize: 30)
     static let subtitle: UIFont = systemFont(ofSize: 20)
+    static let importantInfo: UIFont = boldSystemFont(ofSize: 20)
+    static let miniText: UIFont = systemFont(ofSize: 15)
     static let textField: UIFont = UIFont.boldSystemFont(ofSize: 30)
     static let button: UIFont = UIFont.boldSystemFont(ofSize: 15)
     static let text: UIFont = UIFont.systemFont(ofSize: 20)
     static let nameCandidate: UIFont = UIFont.boldSystemFont(ofSize: 17)
-    static let viceCandidate: UIFont = UIFont.boldSystemFont(ofSize: 15)
+    static let partyCandidate: UIFont = UIFont.boldSystemFont(ofSize: 16)
+    static let viceCandidate: UIFont = UIFont.systemFont(ofSize: 15)
 
 }

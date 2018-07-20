@@ -120,6 +120,7 @@ class ChosenCandidateViewController: BaseViewController {
     @objc func goTosuccsessful(sender: UIButton!) {
         print(#function,"bt pressed")
         let succVC = SuccessfulVoteViewController()
+        succVC.candidate = candidate
         self.navigationController?.pushViewController(succVC, animated: true)
 
 

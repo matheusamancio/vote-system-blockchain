@@ -11,23 +11,23 @@ import UIKit
 class CandidatesTableCell: BaseTableViewCell {
 
     let nameLabel: UILabel = {
-        let l = UILabel()
-        l.textAlignment = .left
-        l.textColor = .black
-        l.numberOfLines = 1
-        return l
+        let label = UILabel.nameCandidate()
+        label.textColor = UIColor.black
+        label.textAlignment = .left
+        label.numberOfLines = 1
+        return label
     }()
     
     let partyLabel: UILabel = {
-        let l = UILabel()
-        l.textAlignment = .left
-        l.textColor = .black
-        l.numberOfLines = 1
-        return l
+        let label = UILabel.partyCandidate()
+        label.textColor = UIColor.black
+        label.textAlignment = .left
+        label.numberOfLines = 1
+        return label
     }()
     
     let viceLabel: UILabel = {
-        let l = UILabel()
+        let l = UILabel.viceCandidate()
         l.textAlignment = .left
         l.textColor = .black
         l.numberOfLines = 1

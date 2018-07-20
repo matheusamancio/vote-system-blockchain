@@ -38,9 +38,32 @@ extension UILabel {
         l.font = UIFont.nameCandidate
         return l
     }
+    
+    static func partyCandidate() -> UILabel {
+        let l = UILabel()
+        l.font = UIFont.partyCandidate
+        return l
+    }
+    
     static func viceCandidate() -> UILabel {
         let l = UILabel()
         l.font = UIFont.viceCandidate
         return l
     }
+    static func miniText() -> UILabel {
+        let l = UILabel()
+        l.font = UIFont.miniText
+        return l
+    }
+    static func importantInfo() -> UILabel {
+        let l = UILabel()
+        l.font = UIFont.importantInfo
+        return l
+    }
+    
+    
 }
+
+
+
+
