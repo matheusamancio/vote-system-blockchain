@@ -42,6 +42,14 @@ class ChosenCandidateViewController: BaseViewController {
         return iv
     }()
     
+    private let descriptionLabel: UILabel = {
+        let label = UILabel.text()
+        label.textColor = UIColor.black
+        label.textAlignment = .left
+        label.numberOfLines = 0
+        return label
+    }()
+    
 
     fileprivate let validateButton: UIButton = {
         let button = UIButton(type: .system)
@@ -66,6 +74,7 @@ class ChosenCandidateViewController: BaseViewController {
         partyLabel.text = candidate?.party
         viceLabel.text = candidate?.vice
         picImageView.image = candidate?.photo
+        descriptionLabel.text = candidate?.description
         
         view.backgroundColor = .white
         view.addSubview(nameLabel)
@@ -73,7 +82,8 @@ class ChosenCandidateViewController: BaseViewController {
         view.addSubview(viceLabel)
         view.addSubview(picImageView)
         view.addSubview(validateButton)
-        
+        view.addSubview(descriptionLabel)
+
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func setupConstraints() {
@@ -105,6 +115,13 @@ class ChosenCandidateViewController: BaseViewController {
             make.top.equalTo(partyLabel.snp.bottom)
             make.left.equalToSuperview()
             make.right.equalToSuperview()
+        }
+        
+        // MARK: descriptionLabel
+        descriptionLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(viceLabel.snp.bottom).offset(32)
+            make.left.equalToSuperview().offset(17)
+            make.right.equalToSuperview().offset(-17)
         }
         
         

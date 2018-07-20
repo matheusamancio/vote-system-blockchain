@@ -14,11 +14,13 @@ struct Candidate {
     var vice: String
     var party: String
     var photo: UIImage
+    var description: String
     
-    init(name: String, vice: String, party: String, photo: String){
+    init(name: String, vice: String, party: String, photo: String, desc: String){
         self.name = name
         self.vice = vice
         self.party = party
         self.photo = UIImage(named: photo)!
+        self.description = desc
     }
 }

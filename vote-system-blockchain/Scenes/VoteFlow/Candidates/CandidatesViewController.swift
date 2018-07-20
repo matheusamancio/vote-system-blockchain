@@ -13,11 +13,11 @@ import UIKit
 class CandidatesViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource  {
     
     var arrayCandidates: [Candidate] = []
-    let c1 = Candidate(name: "José Nascimento", vice: "Marcel Valverde", party: "PLA", photo: "cand1")
-    let c2 = Candidate(name: "Samuel Gomes", vice: "Isaias Lima", party: "PTD", photo: "cand2")
-    let c3 = Candidate(name: "Tobias Neto", vice: "Marcelo Silva", party: "PB", photo: "cand3")
-    let c4 = Candidate(name: "Paula Tanaka", vice: "Matheus Amancio", party: "PSR", photo: "cand4")
-    let c5 = Candidate(name: "Selma Batista", vice: "Evandro Viva", party: "PDF", photo: "cand5")
+    let c1 = Candidate(name: "José Nascimento", vice: "Marcel Valverde", party: "PLA", photo: "cand1", desc:"Nascido em Campinas, José dias Nascimento tem 62 anos. Formado em economia na Universidade de Campinas (Unicamp). Atuou cerca de 20 anos no mercado financeiro e 7 anos na politica. Já foi prefeito de sua cidade natal, e hoje busca a presidencia do Brasil.")
+    let c2 = Candidate(name: "Samuel Gomes", vice: "Isaias Lima", party: "PTD", photo: "cand2", desc:"Nascido em Campinas, José dias Nascimento tem 62 anos. Formado em economia na Universidade de Campinas (Unicamp). Atuou cerca de 20 anos no mercado financeiro e 7 anos na politica. Já foi prefeito de sua cidade natal, e hoje busca a presidencia do Brasil.")
+    let c3 = Candidate(name: "Tobias Neto", vice: "Marcelo Silva", party: "PB", photo: "cand3", desc:"Nascido em Campinas, José dias Nascimento tem 62 anos. Formado em economia na Universidade de Campinas (Unicamp). Atuou cerca de 20 anos no mercado financeiro e 7 anos na politica. Já foi prefeito de sua cidade natal, e hoje busca a presidencia do Brasil.")
+    let c4 = Candidate(name: "Paula Tanaka", vice: "Matheus Amancio", party: "PSR", photo: "cand4", desc:"Nascido em Campinas, José dias Nascimento tem 62 anos. Formado em economia na Universidade de Campinas (Unicamp). Atuou cerca de 20 anos no mercado financeiro e 7 anos na politica. Já foi prefeito de sua cidade natal, e hoje busca a presidencia do Brasil.")
+    let c5 = Candidate(name: "Selma Batista", vice: "Evandro Viva", party: "PDF", photo: "cand5", desc:"Nascido em Campinas, José dias Nascimento tem 62 anos. Formado em economia na Universidade de Campinas (Unicamp). Atuou cerca de 20 anos no mercado financeiro e 7 anos na politica. Já foi prefeito de sua cidade natal, e hoje busca a presidencia do Brasil.")
 
     private let tableView: UITableView = {
         let tb = UITableView()
