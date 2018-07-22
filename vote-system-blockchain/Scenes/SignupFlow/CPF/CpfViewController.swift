@@ -46,9 +46,9 @@ class CpfViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.largeTitleDisplayMode = .automatic
-        self.navigationController?.navigationBar.tintColor = UIColor.black;
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.largeTitleDisplayMode = .automatic
+        self.navigationController?.navigationBar.tintColor = UIColor.black
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.title = "Preparado para \nEscolher o rumo do \nBrasil?"
         setupNavigationMultilineTitle()
@@ -104,6 +104,7 @@ class CpfViewController: BaseViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
 
     
