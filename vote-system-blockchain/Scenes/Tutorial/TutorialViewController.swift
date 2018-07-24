@@ -10,6 +10,8 @@ import UIKit
 
 class TutorialViewController: UIViewController {
     
+    
+    var flag: Int = 0
     private let messageLabel: UILabel = {
         let l = UILabel.subtitle()
         l.textColor = .white
@@ -25,9 +27,34 @@ class TutorialViewController: UIViewController {
         return iv
     }()
     
-    init(text: String, image: UIImage) {
+    fileprivate let jumpButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Pular", for: .normal)
+        button.setTitleColor(.white, for: UIControlState.normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
+        button.titleLabel?.textAlignment = .left
+        button.addTarget(self, action: #selector(goToCpfVC), for: .touchUpInside)
+        return button
+    }()
+    
+    fileprivate let startButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("começar", for: .normal)
+        button.setTitleColor(.black, for: UIControlState.normal)
+        button.titleLabel?.font = UIFont.button
+        button.titleLabel?.textAlignment = .center
+        button.backgroundColor = .white
+        button.layer.cornerRadius = 4
+        button.addTarget(self, action: #selector(goToCpfVC), for: .touchUpInside)
+        return button
+    }()
+    
+    
+    
+    init(text: String, image: UIImage, flag: Int) {
         self.messageLabel.text = text
         self.backImageView.image = image
+        self.flag = flag
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -40,12 +67,34 @@ class TutorialViewController: UIViewController {
         
         self.view.addSubview(backImageView)
         self.view.addSubview(messageLabel)
-
+        self.view.addSubview(jumpButton)
+        self.view.addSubview(startButton)
         // MARK: messageLabel
         messageLabel.snp.makeConstraints { make in
-            make.bottom.equalToSuperview().offset(-35)
-            make.left.equalToSuperview()
-            make.right.equalToSuperview().offset(-13)
+            if self.flag == 3 {
+                make.centerX.equalToSuperview()
+                make.centerY.equalToSuperview().offset(200)
+                messageLabel.textAlignment = .center
+            }else{
+                make.bottom.equalToSuperview().offset(-35)
+                make.left.equalToSuperview()
+                make.right.equalToSuperview().offset(-13)
+                messageLabel.textAlignment = .right
+            }
+        }
+        
+        // MARK: startButton
+        startButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(messageLabel.snp.bottom).offset(23)
+            make.height.equalTo(40)
+            make.width.equalTo(111)
+            messageLabel.textAlignment = .right
+            if self.flag == 3 {
+                startButton.isHidden = false
+            }else{
+                startButton.isHidden = true
+            }
         }
         
         
@@ -58,11 +107,20 @@ class TutorialViewController: UIViewController {
         }
         
         
+        // MARK: jumpButton
+        jumpButton.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(30)
+            make.right.equalToSuperview().offset(-15)
+            make.width.equalTo(50)
+            make.height.equalTo(50)
+        }
+        
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func goToCpfVC(sender: UIButton!) {
+        print(#function,"bt pressed")
+        let cpf = CpfViewController()
+        self.navigationController?.pushViewController(cpf, animated: true)
     }
-
+    
 }

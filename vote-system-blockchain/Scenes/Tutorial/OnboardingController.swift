@@ -13,24 +13,15 @@ class OnboardingController: UIPageViewController, UIPageViewControllerDataSource
     
     var pages = [UIViewController]()
     let pageControl = UIPageControl()
-    fileprivate let nextButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Pular", for: .normal)
-        button.setTitleColor(.white, for: UIControlState.normal)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
-        button.titleLabel?.textAlignment = .left
-        button.addTarget(self, action: #selector(goToCpfVC), for: .touchUpInside)
-        return button
-    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.dataSource = self
         self.delegate = self
         let initialPage = 0
-        let page1 = TutorialViewController(text: "Preparado\npara escolher\no futuro do Brasil?",image: UIImage(named:"Catedral")!)
-        let page2 = TutorialViewController(text: "Se a eleição\npara presidente\nacontecesse apenas na\nsua universidade,\nQuem ganharia?", image: UIImage(named:"Cristo")!)
-        let page3 = TutorialViewController(text: "idqwo",image: UIImage(named:"teste")!)
+        let page1 = TutorialViewController(text: "Preparado\npara escolher\no futuro do Brasil?",image: UIImage(named:"tuto1")!, flag: 1)
+        let page2 = TutorialViewController(text: "Se a eleição\npara presidente\nacontecesse apenas na\nsua universidade,\nQuem ganharia?", image: UIImage(named:"tuto2")!, flag: 2)
+        let page3 = TutorialViewController(text: "Preparado?",image: UIImage(named:"tuto3")!, flag: 3)
         
         // add the individual viewControllers to the pageViewController
         self.pages.append(page1)
@@ -51,17 +42,6 @@ class OnboardingController: UIPageViewController, UIPageViewControllerDataSource
         self.pageControl.widthAnchor.constraint(equalTo: self.view.widthAnchor, constant: -20).isActive = true
         self.pageControl.heightAnchor.constraint(equalToConstant: 20).isActive = true
         self.pageControl.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        
-        
-        self.view.addSubview(nextButton)
-        
-        nextButton.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(30)
-            make.right.equalToSuperview().offset(-15)
-            make.width.equalTo(50)
-            make.height.equalTo(50)
-        }
-        
         
     }
     override init(transitionStyle style: UIPageViewControllerTransitionStyle, navigationOrientation: UIPageViewControllerNavigationOrientation, options: [String : Any]? = nil) {
@@ -112,11 +92,5 @@ class OnboardingController: UIPageViewController, UIPageViewControllerDataSource
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
-
-    @objc func goToCpfVC(sender: UIButton!) {
-        print(#function,"bt pressed")
-        let cpf = CpfViewController()
-        self.navigationController?.pushViewController(cpf, animated: true)
-    }    
+    }   
 }
