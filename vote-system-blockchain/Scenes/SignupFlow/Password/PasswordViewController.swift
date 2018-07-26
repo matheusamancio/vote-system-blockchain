@@ -18,11 +18,12 @@ class PasswordViewController: BaseViewController {
         label.textAlignment = .left
         return label
     }()
-    private let cpfTextField: UITextField = {
+    private let passTextField: UITextField = {
         let textfield = UITextField()
-        textfield.placeholder = "123.456.789-00"
+        textfield.placeholder = "senha dificil please"
         textfield.font = UIFont.textField
         textfield.keyboardType = UIKeyboardType.numberPad
+        textfield.isSecureTextEntry = true
         return textfield
     }()
     private let lineCpfView: UIView = {
@@ -53,9 +54,8 @@ class PasswordViewController: BaseViewController {
         
         view.backgroundColor = .white
         view.addSubview(headerLabel)
-        view.addSubview(cpfTextField)
+        view.addSubview(passTextField)
         view.addSubview(lineCpfView)
-        view.addSubview(cpfTextField)
         view.addSubview(validateButton)
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -77,7 +77,7 @@ class PasswordViewController: BaseViewController {
         }
         
         // MARK: cpfTextField
-        cpfTextField.snp.makeConstraints { (make) in
+        passTextField.snp.makeConstraints { (make) in
             make.top.equalTo(headerLabel.snp.bottom)
             make.left.equalToSuperview().offset(35)
             make.right.equalToSuperview().offset(-35)
@@ -85,7 +85,7 @@ class PasswordViewController: BaseViewController {
         }
         // MARK: lineCpfView
         lineCpfView.snp.makeConstraints { make in
-            make.bottom.equalTo(cpfTextField.snp.bottom)
+            make.bottom.equalTo(passTextField.snp.bottom)
             make.left.equalToSuperview().offset(35)
             make.right.equalToSuperview().offset(-35)
             make.height.equalTo(1)

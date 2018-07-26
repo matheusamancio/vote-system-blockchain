@@ -50,7 +50,7 @@ class CpfViewController: BaseViewController {
         self.navigationItem.largeTitleDisplayMode = .automatic
         self.navigationController?.navigationBar.tintColor = UIColor.black
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        self.title = "Preparado para \nEscolher o rumo do \nBrasil?"
+        self.title = "Criar uma conta"
         setupNavigationMultilineTitle()
     
 
@@ -58,7 +58,6 @@ class CpfViewController: BaseViewController {
         view.addSubview(headerLabel)
         view.addSubview(cpfTextField)
         view.addSubview(lineCpfView)
-        view.addSubview(cpfTextField)
         view.addSubview(validateButton)
     }
 
