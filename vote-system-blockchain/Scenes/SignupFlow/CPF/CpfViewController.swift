@@ -37,7 +37,7 @@ class CpfViewController: BaseViewController {
         button.setTitleColor(.white, for: UIControlState.normal)
         button.titleLabel?.font = UIFont.button
         button.titleLabel?.textAlignment = .center
-        button.backgroundColor = UIColor.gray
+        button.backgroundColor = UIColor.buttonColor()
         button.layer.cornerRadius = 4
         button.addTarget(self, action: #selector(goToPasswordVC), for: .touchUpInside)
         return button

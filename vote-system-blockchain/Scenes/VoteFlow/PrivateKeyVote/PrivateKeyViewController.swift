@@ -11,7 +11,7 @@ import UIKit
 class PrivateKeyViewController: BaseViewController {
     
     private let label1: UILabel = {
-        let label = UILabel.subtitle()
+        let label = UILabel.text()
         label.text = "Seu CPF ja foi validado e este \nnúmero é o seu VOTE NUMBER"
         label.textColor = UIColor.black
         label.textAlignment = .left
@@ -20,7 +20,7 @@ class PrivateKeyViewController: BaseViewController {
     }()
     
     private let label2: UILabel = {
-        let label = UILabel.subtitle()
+        let label = UILabel.text()
         label.text = "Guarde este número com carinho, \npois é a forma de você identificar \nseu voto."
         label.textColor = UIColor.black
         label.textAlignment = .left
@@ -29,7 +29,7 @@ class PrivateKeyViewController: BaseViewController {
     }()
     
     private let label3: UILabel = {
-        let label = UILabel.subtitle()
+        let label = UILabel.text()
         label.text = "Vote Number"
         label.textColor = UIColor.black
         label.textAlignment = .center
@@ -38,7 +38,7 @@ class PrivateKeyViewController: BaseViewController {
     }()
     
     private let label4: UILabel = {
-        let label = UILabel.subtitle()
+        let label = UILabel.importantInfo()
         label.text = "B94R10PS"
         label.textColor = UIColor.black
         label.textAlignment = .center
@@ -64,7 +64,7 @@ class PrivateKeyViewController: BaseViewController {
         button.setTitleColor(.white, for: UIControlState.normal)
         button.titleLabel?.font = UIFont.button
         button.titleLabel?.textAlignment = .center
-        button.backgroundColor = UIColor.gray
+        button.backgroundColor = UIColor.buttonColor()
         button.layer.cornerRadius = 4
         button.addTarget(self, action: #selector(goToCandidates), for: .touchUpInside)
         return button
@@ -97,29 +97,29 @@ class PrivateKeyViewController: BaseViewController {
         // MARK: label1
         label1.snp.makeConstraints { (make) in
             make.top.equalTo(view.safeAreaLayoutGuide).offset(44)
-            make.left.equalToSuperview().offset(35)
-            make.right.equalToSuperview().offset(-35)
+            make.left.equalToSuperview().offset(15)
+            make.right.equalToSuperview().offset(-20)
         }
         
         // MARK: label2
         label2.snp.makeConstraints { (make) in
             make.top.equalTo(label1.snp.bottom).offset(14)
-            make.left.equalToSuperview().offset(35)
-            make.right.equalToSuperview().offset(-35)
+            make.left.equalToSuperview().offset(15)
+            make.right.equalToSuperview().offset(-20)
         }
         
         // MARK: label3
         label3.snp.makeConstraints { (make) in
             make.top.equalTo(label2.snp.bottom).offset(30)
-            make.left.equalToSuperview().offset(35)
-            make.right.equalToSuperview().offset(-35)
+            make.left.equalToSuperview().offset(20)
+            make.right.equalToSuperview().offset(-20)
         }
         
         // MARK: label4
         label4.snp.makeConstraints { (make) in
             make.top.equalTo(label3.snp.bottom).offset(11)
-            make.left.equalToSuperview().offset(35)
-            make.right.equalToSuperview().offset(-35)
+            make.left.equalToSuperview().offset(20)
+            make.right.equalToSuperview().offset(-20)
             make.height.equalTo(44)
         }
         

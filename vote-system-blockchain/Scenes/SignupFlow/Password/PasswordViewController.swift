@@ -20,7 +20,7 @@ class PasswordViewController: BaseViewController {
     }()
     private let passTextField: UITextField = {
         let textfield = UITextField()
-        textfield.placeholder = "senha dificil please"
+        textfield.placeholder = "uma senha dificil"
         textfield.font = UIFont.textField
         textfield.keyboardType = UIKeyboardType.numberPad
         textfield.isSecureTextEntry = true
@@ -37,7 +37,7 @@ class PasswordViewController: BaseViewController {
         button.setTitleColor(.white, for: UIControlState.normal)
         button.titleLabel?.font = UIFont.button
         button.titleLabel?.textAlignment = .center
-        button.backgroundColor = UIColor.gray
+        button.backgroundColor = UIColor.buttonColor()
         button.layer.cornerRadius = 4
         button.addTarget(self, action: #selector(goToVoteNumber), for: .touchUpInside)
         return button
@@ -46,7 +46,7 @@ class PasswordViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Escolha uma Senha"
+        self.title = "Agora uma Senha"
         setupNavigationMultilineTitle()
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
 

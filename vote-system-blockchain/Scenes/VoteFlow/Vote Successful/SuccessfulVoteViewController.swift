@@ -13,7 +13,7 @@ class SuccessfulVoteViewController: BaseViewController {
     var candidate: Candidate? = nil
     
     private let messageLabel: UILabel = {
-        let l = UILabel.subtitle()
+        let l = UILabel.text()
         l.text = "Seu voto foi Registrado com\nsucesso"
         l.textColor = .black
         l.numberOfLines = 2
@@ -22,7 +22,7 @@ class SuccessfulVoteViewController: BaseViewController {
     }()
     
     private let voteLabel: UILabel = {
-        let l = UILabel.miniText()
+        let l = UILabel.text()
         l.text = "Vote Number"
         l.textColor = .black
         l.numberOfLines = 1

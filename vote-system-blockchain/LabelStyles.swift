@@ -50,16 +50,20 @@ extension UILabel {
         l.font = UIFont.viceCandidate
         return l
     }
-    static func miniText() -> UILabel {
-        let l = UILabel()
-        l.font = UIFont.miniText
-        return l
-    }
+
     static func importantInfo() -> UILabel {
         let l = UILabel()
         l.font = UIFont.importantInfo
         return l
     }
+    
+    static func onboarding() -> UILabel {
+        let l = UILabel()
+        l.font = UIFont.onboarding
+        return l
+    }
+    
+    
     
     
 }

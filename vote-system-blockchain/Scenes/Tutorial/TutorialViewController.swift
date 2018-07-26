@@ -13,7 +13,7 @@ class TutorialViewController: UIViewController {
     
     var flag: Int = 0
     private let messageLabel: UILabel = {
-        let l = UILabel.subtitle()
+        let l = UILabel.onboarding()
         l.textColor = .white
         l.numberOfLines = 5
         l.textAlignment = .right
@@ -73,10 +73,10 @@ class TutorialViewController: UIViewController {
         messageLabel.snp.makeConstraints { make in
             if self.flag == 3 {
                 make.centerX.equalToSuperview()
-                make.centerY.equalToSuperview().offset(200)
+                make.bottom.equalToSuperview().offset(-100)
                 messageLabel.textAlignment = .center
             }else{
-                make.bottom.equalToSuperview().offset(-35)
+                make.bottom.equalToSuperview().offset(-30)
                 make.left.equalToSuperview()
                 make.right.equalToSuperview().offset(-13)
                 messageLabel.textAlignment = .right
@@ -86,7 +86,7 @@ class TutorialViewController: UIViewController {
         // MARK: startButton
         startButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(messageLabel.snp.bottom).offset(23)
+            make.top.equalTo(messageLabel.snp.bottom).offset(20)
             make.height.equalTo(40)
             make.width.equalTo(111)
             messageLabel.textAlignment = .right

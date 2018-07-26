@@ -9,8 +9,15 @@
 import Foundation
 import UIKit
 
+extension UIColor{
+    //Polution Scene
+    class func buttonColor() -> UIColor{
+        return UIColor(red: 0/255, green: 132/255, blue: 136/255, alpha: 1)
+    }
+}
+
+
 extension UIViewController {
-    
     func setupNavigationMultilineTitle() {
         guard let navigationBar = self.navigationController?.navigationBar else { return }
         for sview in navigationBar.subviews {
@@ -27,5 +34,4 @@ extension UIViewController {
             }
         }
     }
-    
 }
