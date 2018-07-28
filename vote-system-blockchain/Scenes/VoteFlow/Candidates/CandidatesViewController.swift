@@ -35,7 +35,7 @@ class CandidatesViewController: BaseViewController, UITableViewDelegate, UITable
         super.viewDidLoad()
         arrayCandidates = [c1,c2,c3,c4,c5]
 
-        self.title = "Escolha um candidato"
+        self.title = "Candidatos"
         setupNavigationMultilineTitle()
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
 
