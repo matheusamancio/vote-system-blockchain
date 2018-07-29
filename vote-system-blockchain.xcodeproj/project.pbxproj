@@ -21,12 +21,12 @@
 		DDB87E6920E465D3004207A3 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB87E6820E465D3004207A3 /* PasswordViewController.swift */; };
 		DDD8718620F81383005D556D /* CandidatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8718520F81383005D556D /* CandidatesViewController.swift */; };
 		DDD8718820F81411005D556D /* CandidatesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8718720F81411005D556D /* CandidatesTableCell.swift */; };
-		DDD8718E20F814A1005D556D /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8718D20F814A1005D556D /* BaseTableViewCell.swift */; };
 		DDE903E420A549BE00EE3A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE903E320A549BE00EE3A54 /* AppDelegate.swift */; };
 		DDE903E620A549BE00EE3A54 /* CpfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE903E520A549BE00EE3A54 /* CpfViewController.swift */; };
 		DDE903E920A549BE00EE3A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE903E720A549BE00EE3A54 /* Main.storyboard */; };
 		DDE903EB20A549C000EE3A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDE903EA20A549C000EE3A54 /* Assets.xcassets */; };
 		DDE903EE20A549C000EE3A54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE903EC20A549C000EE3A54 /* LaunchScreen.storyboard */; };
+		DDEE2AD1210E0E2200CF85A5 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE2AD0210E0E2200CF85A5 /* BaseTableViewCell.swift */; };
 		EA8C1FFF8FBA9DB8AD39B3B8 /* Pods_vote_system_blockchain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C0245214A3C12EAC691FD8 /* Pods_vote_system_blockchain.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,6 @@
 		DDB87E6820E465D3004207A3 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		DDD8718520F81383005D556D /* CandidatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesViewController.swift; sourceTree = "<group>"; };
 		DDD8718720F81411005D556D /* CandidatesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesTableCell.swift; sourceTree = "<group>"; };
-		DDD8718D20F814A1005D556D /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseTableViewCell.swift; path = ../../BaseTableViewCell.swift; sourceTree = "<group>"; };
 		DDE903E020A549BE00EE3A54 /* vote-system-blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vote-system-blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE903E320A549BE00EE3A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDE903E520A549BE00EE3A54 /* CpfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CpfViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		DDE903EA20A549C000EE3A54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDE903ED20A549C000EE3A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDE903EF20A549C000EE3A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDEE2AD0210E0E2200CF85A5 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,8 +202,8 @@
 				DDE903E320A549BE00EE3A54 /* AppDelegate.swift */,
 				DDE903E720A549BE00EE3A54 /* Main.storyboard */,
 				DDE903EA20A549C000EE3A54 /* Assets.xcassets */,
-				DDD8718D20F814A1005D556D /* BaseTableViewCell.swift */,
 				DDE903EC20A549C000EE3A54 /* LaunchScreen.storyboard */,
+				DDEE2AD0210E0E2200CF85A5 /* BaseTableViewCell.swift */,
 				DDE903EF20A549C000EE3A54 /* Info.plist */,
 				DDB6FB0520A54DB300BFA276 /* BaseViewController.swift */,
 				DD0C725E20A75E23009F82EB /* LabelStyles.swift */,
@@ -338,7 +338,6 @@
 				DD9C8C0F20F5839D00E5579D /* PrivateKeyViewController.swift in Sources */,
 				DD0C725F20A75E23009F82EB /* LabelStyles.swift in Sources */,
 				DD02674120FE9AA5004D5125 /* ChosenCandidateViewController.swift in Sources */,
-				DDD8718E20F814A1005D556D /* BaseTableViewCell.swift in Sources */,
 				DDB87E6920E465D3004207A3 /* PasswordViewController.swift in Sources */,
 				DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */,
 				DD02674420FFDD5B004D5125 /* SuccessfulVoteViewController.swift in Sources */,
@@ -346,6 +345,7 @@
 				DD02674621016FEF004D5125 /* Extensions.swift in Sources */,
 				DDE903E620A549BE00EE3A54 /* CpfViewController.swift in Sources */,
 				DD7BA1832105142900AA748D /* OnboardingController.swift in Sources */,
+				DDEE2AD1210E0E2200CF85A5 /* BaseTableViewCell.swift in Sources */,
 				DD7BA185210514F000AA748D /* TutorialViewController.swift in Sources */,
 				DDB87E6320E45BF3004207A3 /* Candidate.swift in Sources */,
 				DDE903E420A549BE00EE3A54 /* AppDelegate.swift in Sources */,
