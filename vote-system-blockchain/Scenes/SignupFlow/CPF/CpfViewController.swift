@@ -51,6 +51,8 @@ class CpfViewController: BaseViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.black
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.title = "Criar uma conta"
+        self.navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.shadowImage = UIImage()
         setupNavigationMultilineTitle()
     
 
