@@ -33,7 +33,7 @@ class TutorialViewController: UIViewController {
         button.setTitleColor(.white, for: UIControlState.normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
         button.titleLabel?.textAlignment = .left
-        button.addTarget(self, action: #selector(goToCpfVC), for: .touchUpInside)
+        button.addTarget(self, action: #selector(goToNameVC), for: .touchUpInside)
         return button
     }()
     
@@ -45,7 +45,7 @@ class TutorialViewController: UIViewController {
         button.titleLabel?.textAlignment = .center
         button.backgroundColor = .white
         button.layer.cornerRadius = 4
-        button.addTarget(self, action: #selector(goToCpfVC), for: .touchUpInside)
+        button.addTarget(self, action: #selector(goToNameVC), for: .touchUpInside)
         return button
     }()
     
@@ -117,10 +117,10 @@ class TutorialViewController: UIViewController {
         
     }
     
-    @objc func goToCpfVC(sender: UIButton!) {
+    @objc func goToNameVC(sender: UIButton!) {
         print(#function,"bt pressed")
-        let cpf = CpfViewController()
-        self.navigationController?.pushViewController(cpf, animated: true)
+        let name = NameViewController()
+        self.navigationController?.pushViewController(name, animated: true)
     }
     
 }
