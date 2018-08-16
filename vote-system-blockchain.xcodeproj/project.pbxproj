@@ -12,6 +12,7 @@
 		DD02674621016FEF004D5125 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02674521016FEF004D5125 /* Extensions.swift */; };
 		DD0C725F20A75E23009F82EB /* LabelStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C725E20A75E23009F82EB /* LabelStyles.swift */; };
 		DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C726020A75E4F009F82EB /* FontStyles.swift */; };
+		DD40A4862125238400C135B2 /* ConfirmPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40A4852125238400C135B2 /* ConfirmPassViewController.swift */; };
 		DD7BA1832105142900AA748D /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BA1822105142900AA748D /* OnboardingController.swift */; };
 		DD7BA185210514F000AA748D /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7BA184210514F000AA748D /* TutorialViewController.swift */; };
 		DD9C8C0F20F5839D00E5579D /* PrivateKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C8C0E20F5839D00E5579D /* PrivateKeyViewController.swift */; };
@@ -39,6 +40,7 @@
 		DD02674521016FEF004D5125 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DD0C725E20A75E23009F82EB /* LabelStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyles.swift; sourceTree = "<group>"; };
 		DD0C726020A75E4F009F82EB /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
+		DD40A4852125238400C135B2 /* ConfirmPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPassViewController.swift; sourceTree = "<group>"; };
 		DD7BA1822105142900AA748D /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		DD7BA184210514F000AA748D /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		DD9C8C0E20F5839D00E5579D /* PrivateKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKeyViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,14 @@
 			path = "Vote Successful";
 			sourceTree = "<group>";
 		};
+		DD40A484212522F300C135B2 /* ConfirmPassword */ = {
+			isa = PBXGroup;
+			children = (
+				DD40A4852125238400C135B2 /* ConfirmPassViewController.swift */,
+			);
+			path = ConfirmPassword;
+			sourceTree = "<group>";
+		};
 		DD7BA181210513E900AA748D /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,8 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				DD7BA181210513E900AA748D /* Tutorial */,
-				DD9C8C0C20F5833300E5579D /* VoteFlow */,
 				DDB87E6520E460B1004207A3 /* SignupFlow */,
+				DD9C8C0C20F5833300E5579D /* VoteFlow */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -145,8 +155,9 @@
 		DDB87E6520E460B1004207A3 /* SignupFlow */ = {
 			isa = PBXGroup;
 			children = (
-				DDB87E6720E465A2004207A3 /* Password */,
 				DDB87E6620E460EC004207A3 /* CPF */,
+				DDB87E6720E465A2004207A3 /* Password */,
+				DD40A484212522F300C135B2 /* ConfirmPassword */,
 			);
 			path = SignupFlow;
 			sourceTree = "<group>";
@@ -345,6 +356,7 @@
 				DD02674621016FEF004D5125 /* Extensions.swift in Sources */,
 				DDE903E620A549BE00EE3A54 /* CpfViewController.swift in Sources */,
 				DD7BA1832105142900AA748D /* OnboardingController.swift in Sources */,
+				DD40A4862125238400C135B2 /* ConfirmPassViewController.swift in Sources */,
 				DDEE2AD1210E0E2200CF85A5 /* BaseTableViewCell.swift in Sources */,
 				DD7BA185210514F000AA748D /* TutorialViewController.swift in Sources */,
 				DDB87E6320E45BF3004207A3 /* Candidate.swift in Sources */,

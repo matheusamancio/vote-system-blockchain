@@ -1,19 +1,18 @@
 //
-//  PasswordViewController.swift
+//  ConfirmPassViewController.swift
 //  vote-system-blockchain
 //
-//  Created by Matheus Amancio Seixeiro on 27/06/2018.
+//  Created by Matheus Amancio Seixeiro on 16/08/2018.
 //  Copyright © 2018 Matheus Amancio Seixeiro. All rights reserved.
 //
 
 import UIKit
 
-class PasswordViewController: BaseViewController {
-    
+class ConfirmPassViewController: BaseViewController {
     
     private let headerLabel: UILabel = {
         let label = UILabel.subtitle()
-        label.text = "Senha:"
+        label.text = "Repita a senha:"
         label.textColor = UIColor.black
         label.textAlignment = .left
         return label
@@ -46,10 +45,10 @@ class PasswordViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Agora uma Senha"
+        self.title = "Confirme sua Senha"
         setupNavigationMultilineTitle()
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-
+        
         
         
         view.backgroundColor = .white
@@ -62,8 +61,8 @@ class PasswordViewController: BaseViewController {
     }
     
     @objc func goToVoteNumber(sender: UIButton!) {
-        let confirmVC = ConfirmPassViewController()
-        self.navigationController?.pushViewController(confirmVC, animated: true)
+        let privateVC = PrivateKeyViewController()
+        self.navigationController?.pushViewController(privateVC, animated: true)
     }
     
     override func setupConstraints() {
@@ -105,6 +104,4 @@ class PasswordViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
 }
-
