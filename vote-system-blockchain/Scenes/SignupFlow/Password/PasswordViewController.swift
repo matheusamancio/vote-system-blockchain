@@ -51,7 +51,7 @@ class PasswordViewController: BaseViewController {
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
 
         
-        
+        passTextField.becomeFirstResponder()
         view.backgroundColor = .white
         view.addSubview(headerLabel)
         view.addSubview(passTextField)

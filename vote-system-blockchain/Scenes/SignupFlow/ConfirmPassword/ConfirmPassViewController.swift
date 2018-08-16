@@ -17,7 +17,7 @@ class ConfirmPassViewController: BaseViewController {
         label.textAlignment = .left
         return label
     }()
-    private let passTextField: UITextField = {
+    private let confirmPassTextField: UITextField = {
         let textfield = UITextField()
         textfield.placeholder = "uma senha dificil"
         textfield.font = UIFont.textField
@@ -50,10 +50,10 @@ class ConfirmPassViewController: BaseViewController {
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         
-        
+        confirmPassTextField.becomeFirstResponder()
         view.backgroundColor = .white
         view.addSubview(headerLabel)
-        view.addSubview(passTextField)
+        view.addSubview(confirmPassTextField)
         view.addSubview(lineCpfView)
         view.addSubview(validateButton)
         
@@ -61,8 +61,8 @@ class ConfirmPassViewController: BaseViewController {
     }
     
     @objc func goToVoteNumber(sender: UIButton!) {
-        let privateVC = PrivateKeyViewController()
-        self.navigationController?.pushViewController(privateVC, animated: true)
+        let quizVC = QuizViewController()
+        self.present(quizVC, animated: true, completion: nil)
     }
     
     override func setupConstraints() {
@@ -76,7 +76,7 @@ class ConfirmPassViewController: BaseViewController {
         }
         
         // MARK: cpfTextField
-        passTextField.snp.makeConstraints { (make) in
+        confirmPassTextField.snp.makeConstraints { (make) in
             make.top.equalTo(headerLabel.snp.bottom)
             make.left.equalToSuperview().offset(35)
             make.right.equalToSuperview().offset(-35)
@@ -84,7 +84,7 @@ class ConfirmPassViewController: BaseViewController {
         }
         // MARK: lineCpfView
         lineCpfView.snp.makeConstraints { make in
-            make.bottom.equalTo(passTextField.snp.bottom)
+            make.bottom.equalTo(confirmPassTextField.snp.bottom)
             make.left.equalToSuperview().offset(35)
             make.right.equalToSuperview().offset(-35)
             make.height.equalTo(1)

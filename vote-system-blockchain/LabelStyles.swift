@@ -33,6 +33,13 @@ extension UILabel {
         l.font = UIFont.text
         return l
     }
+    
+    static func miniText() -> UILabel {
+        let l = UILabel()
+        l.font = UIFont.minitext
+        return l
+    }
+    
     static func nameCandidate() -> UILabel {
         let l = UILabel()
         l.font = UIFont.nameCandidate

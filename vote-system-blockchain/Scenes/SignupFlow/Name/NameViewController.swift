@@ -17,11 +17,11 @@ class NameViewController: BaseViewController {
         label.textAlignment = .left
         return label
     }()
-    private let cpfTextField: UITextField = {
+    private let nameTextField: UITextField = {
         let textfield = UITextField()
         textfield.placeholder = "Fulano da Silva"
         textfield.font = UIFont.textField
-        textfield.keyboardType = UIKeyboardType.numberPad
+        textfield.keyboardType = UIKeyboardType.default
         return textfield
     }()
     private let lineCpfView: UIView = {
@@ -53,10 +53,11 @@ class NameViewController: BaseViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         setupNavigationMultilineTitle()
         
-        
+                
+        nameTextField.becomeFirstResponder()
         view.backgroundColor = .white
         view.addSubview(headerLabel)
-        view.addSubview(cpfTextField)
+        view.addSubview(nameTextField)
         view.addSubview(lineCpfView)
         view.addSubview(validateButton)
     }
@@ -75,8 +76,8 @@ class NameViewController: BaseViewController {
             make.right.equalToSuperview().offset(-35)
         }
         
-        // MARK: cpfTextField
-        cpfTextField.snp.makeConstraints { (make) in
+        // MARK: nameTextField
+        nameTextField.snp.makeConstraints { (make) in
             make.top.equalTo(headerLabel.snp.bottom)
             make.left.equalToSuperview().offset(35)
             make.right.equalToSuperview().offset(-35)
@@ -84,7 +85,7 @@ class NameViewController: BaseViewController {
         }
         // MARK: lineCpfView
         lineCpfView.snp.makeConstraints { make in
-            make.bottom.equalTo(cpfTextField.snp.bottom)
+            make.bottom.equalTo(nameTextField.snp.bottom)
             make.left.equalToSuperview().offset(35)
             make.right.equalToSuperview().offset(-35)
             make.height.equalTo(1)

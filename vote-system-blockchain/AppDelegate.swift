@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         if let window = window{
+//            let mainVC = QuizViewController()
             let mainVC = OnboardingController()
             navigationController = UINavigationController(rootViewController: mainVC)
             window.rootViewController = navigationController

@@ -55,7 +55,7 @@ class CpfViewController: BaseViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         setupNavigationMultilineTitle()
     
-
+        cpfTextField.becomeFirstResponder()
         view.backgroundColor = .white
         view.addSubview(headerLabel)
         view.addSubview(cpfTextField)
