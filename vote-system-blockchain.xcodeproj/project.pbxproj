@@ -12,6 +12,7 @@
 		DD02674621016FEF004D5125 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02674521016FEF004D5125 /* Extensions.swift */; };
 		DD0C725F20A75E23009F82EB /* LabelStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C725E20A75E23009F82EB /* LabelStyles.swift */; };
 		DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C726020A75E4F009F82EB /* FontStyles.swift */; };
+		DD3D028B2126283A002C2FE2 /* FirstQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3D028A2126283A002C2FE2 /* FirstQuizViewController.swift */; };
 		DD40A4862125238400C135B2 /* ConfirmPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40A4852125238400C135B2 /* ConfirmPassViewController.swift */; };
 		DD40A4892125279600C135B2 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40A4882125279600C135B2 /* NameViewController.swift */; };
 		DD66ECE1212614FF00BA8C99 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66ECE0212614FF00BA8C99 /* QuizViewController.swift */; };
@@ -42,6 +43,7 @@
 		DD02674521016FEF004D5125 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DD0C725E20A75E23009F82EB /* LabelStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyles.swift; sourceTree = "<group>"; };
 		DD0C726020A75E4F009F82EB /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
+		DD3D028A2126283A002C2FE2 /* FirstQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstQuizViewController.swift; sourceTree = "<group>"; };
 		DD40A4852125238400C135B2 /* ConfirmPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPassViewController.swift; sourceTree = "<group>"; };
 		DD40A4882125279600C135B2 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		DD66ECE0212614FF00BA8C99 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				DD66ECE0212614FF00BA8C99 /* QuizViewController.swift */,
+				DD3D028A2126283A002C2FE2 /* FirstQuizViewController.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				DD02674120FE9AA5004D5125 /* ChosenCandidateViewController.swift in Sources */,
 				DDB87E6920E465D3004207A3 /* PasswordViewController.swift in Sources */,
 				DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */,
+				DD3D028B2126283A002C2FE2 /* FirstQuizViewController.swift in Sources */,
 				DD02674420FFDD5B004D5125 /* SuccessfulVoteViewController.swift in Sources */,
 				DDB87E6120E45AC3004207A3 /* User.swift in Sources */,
 				DD02674621016FEF004D5125 /* Extensions.swift in Sources */,

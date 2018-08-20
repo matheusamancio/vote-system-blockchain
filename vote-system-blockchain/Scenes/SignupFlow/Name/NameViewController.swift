@@ -29,7 +29,7 @@ class NameViewController: BaseViewController {
         view.backgroundColor = UIColor.black
         return view
     }()
-    fileprivate let validateButton: UIButton = {
+    fileprivate let nextButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Próxima Etapa", for: .normal)
         button.setTitleColor(.white, for: UIControlState.normal)
@@ -59,7 +59,7 @@ class NameViewController: BaseViewController {
         view.addSubview(headerLabel)
         view.addSubview(nameTextField)
         view.addSubview(lineCpfView)
-        view.addSubview(validateButton)
+        view.addSubview(nextButton)
     }
     
     @objc func goToCPFVC(sender: UIButton!) {
@@ -91,8 +91,8 @@ class NameViewController: BaseViewController {
             make.height.equalTo(1)
         }
         
-        //MARK: validateButton
-        validateButton.snp.makeConstraints { (make) in
+        //MARK: nextButton
+        nextButton.snp.makeConstraints { (make) in
             make.top.equalTo(lineCpfView.snp.bottom).offset(44)
             make.left.equalToSuperview().offset(35)
             make.right.equalToSuperview().offset(-35)

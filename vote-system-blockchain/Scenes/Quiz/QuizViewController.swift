@@ -53,10 +53,16 @@ class QuizViewController: BaseViewController {
         button.titleLabel?.textAlignment = .center
         button.backgroundColor = .white
         button.layer.cornerRadius = 4
-        button.addTarget(self, action: #selector(goToNameVC), for: .touchUpInside)
+        button.addTarget(self, action: #selector(goToFirst), for: .touchUpInside)
         return button
     }()
     
+    @objc func goToFirst(sender: UIButton!) {
+        let first = FirstQuizViewController()
+        var navigationController: UINavigationController?
+        navigationController = UINavigationController(rootViewController: first)
+        self.present(navigationController!, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,8 +79,6 @@ class QuizViewController: BaseViewController {
                 make.top.equalToSuperview().offset(33)
                 make.left.equalToSuperview().offset(15)
                 make.height.equalTo(35)
-            
-            
         }
         
         // MARK: messageLabel
@@ -90,8 +94,6 @@ class QuizViewController: BaseViewController {
             make.left.equalTo(nameLabel.snp.left)
             make.width.equalTo(182)
         }
-        
-        
         
         // MARK: startButton
         startButton.snp.makeConstraints { make in
