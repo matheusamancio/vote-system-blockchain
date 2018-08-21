@@ -20,7 +20,7 @@ class FirstQuizViewController: BaseViewController {
 
     private let womanLabel: UILabel = {
         let l = UILabel.text()
-        l.text = "Feminimo"
+        l.text = "Feminino"
         l.textAlignment = .center
         l.textColor = .gray
         return l
@@ -61,23 +61,17 @@ class FirstQuizViewController: BaseViewController {
 
     fileprivate let womanButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Próxima Etapa", for: .normal)
-        button.setTitleColor(.white, for: UIControlState.normal)
-        button.titleLabel?.font = UIFont.button
-        button.titleLabel?.textAlignment = .center
-        button.backgroundColor = UIColor.buttonColor()
         button.layer.cornerRadius = 8
+        button.tag = 0
+        button.addTarget(self, action: #selector(chooseGender), for: .touchUpInside)
         return button
     }()
     
     fileprivate let manButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Próxima Etapa", for: .normal)
-        button.setTitleColor(.white, for: UIControlState.normal)
-        button.titleLabel?.font = UIFont.button
-        button.titleLabel?.textAlignment = .center
-        button.backgroundColor = UIColor.buttonColor()
         button.layer.cornerRadius = 8
+        button.tag = 1
+        button.addTarget(self, action: #selector(chooseGender), for: .touchUpInside)
         return button
     }()
     
@@ -126,8 +120,6 @@ class FirstQuizViewController: BaseViewController {
         
         
         view.backgroundColor = .white
-//        view.addSubview(womanButton)
-//        view.addSubview(manButton)
         view.addSubview(nextButton)
         view.addSubview(infoimage)
         view.addSubview(messageLabel)
@@ -137,6 +129,8 @@ class FirstQuizViewController: BaseViewController {
         womanView.addSubview(womanIconImageView)
         manView.addSubview(manLabel)
         manView.addSubview(manIconImageView)
+        view.addSubview(womanButton)
+        view.addSubview(manButton)
     }
     
     @objc func goToSecond(sender: UIButton!) {
@@ -144,23 +138,48 @@ class FirstQuizViewController: BaseViewController {
         self.navigationController?.pushViewController(cpf, animated: true)
     }
     
+    @objc func chooseGender(sender: UIButton!) {
+        if sender.tag == 0{
+            womanLabel.textColor = UIColor.buttonColor()
+            womanIconImageView.image = #imageLiteral(resourceName: "woman_pressed")
+            womanView.layer.borderWidth = 3
+            womanLabel.font = UIFont.nameCandidate
+            manLabel.textColor = UIColor.gray
+            manIconImageView.image = #imageLiteral(resourceName: "man")
+            manView.layer.borderWidth = 2
+            manLabel.font = UIFont.text
+
+        }else {
+            manLabel.textColor = UIColor.buttonColor()
+            manIconImageView.image = #imageLiteral(resourceName: "man_pressed")
+            manView.layer.borderWidth = 3
+            manLabel.font = UIFont.nameCandidate
+            womanLabel.textColor = UIColor.gray
+            womanIconImageView.image = #imageLiteral(resourceName: "woman")
+            womanView.layer.borderWidth = 2
+            womanLabel.font = UIFont.text
+
+        }
+    }
+    
+    
     override func setupConstraints() {
         //MARK: womanButton
-//        womanButton.snp.makeConstraints { (make) in
-//            make.centerX.equalToSuperview().offset(80)
-//            make.centerY.equalToSuperview().offset(-20)
-//            make.height.equalTo(129)
-//            make.width.equalTo(129)
-//        }
-//
-//        //MARK: manButton
-//        manButton.snp.makeConstraints { (make) in
-//            make.centerX.equalToSuperview().offset(-80)
-//            make.centerY.equalToSuperview().offset(-20)
-//            make.height.equalTo(129)
-//            make.width.equalTo(129)
-//        }
-//
+        womanButton.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview().offset(80)
+            make.centerY.equalToSuperview().offset(-20)
+            make.height.equalTo(129)
+            make.width.equalTo(129)
+        }
+
+        //MARK: manButton
+        manButton.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview().offset(-80)
+            make.centerY.equalToSuperview().offset(-20)
+            make.height.equalTo(129)
+            make.width.equalTo(129)
+        }
+
         //MARK: womanView
         womanView.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview().offset(80)
