@@ -134,8 +134,8 @@ class FirstQuizViewController: BaseViewController {
     }
     
     @objc func goToSecond(sender: UIButton!) {
-        let cpf = CpfViewController()
-        self.navigationController?.pushViewController(cpf, animated: true)
+        let sq = SecondQuizViewController()
+        self.navigationController?.pushViewController(sq, animated: true)
     }
     
     @objc func chooseGender(sender: UIButton!) {
