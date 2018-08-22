@@ -1,5 +1,5 @@
 //
-//  ThirdQuizViewController.swift
+//  FourthQuizViewController.swift
 //  vote-system-blockchain
 //
 //  Created by Matheus Amancio Seixeiro on 22/08/2018.
@@ -8,19 +8,19 @@
 
 import UIKit
 
-class ThirdQuizViewController: BaseViewController {
+class FourthQuizViewController: BaseViewController {
     
     
     private let headerLabel: UILabel = {
         let label = UILabel.subtitle()
-        label.text = "Renda Mensal"
+        label.text = "digite sua idade"
         label.textColor = UIColor.black
         label.textAlignment = .left
         return label
     }()
-    private let incomeTextField: UITextField = {
+    private let ageTextField: UITextField = {
         let textfield = UITextField()
-        textfield.placeholder = "R$5.000"
+        textfield.placeholder = "22"
         textfield.font = UIFont.textField
         textfield.keyboardType = UIKeyboardType.numberPad
         return textfield
@@ -38,7 +38,7 @@ class ThirdQuizViewController: BaseViewController {
         button.titleLabel?.textAlignment = .center
         button.backgroundColor = UIColor.buttonColor()
         button.layer.cornerRadius = 4
-        button.addTarget(self, action: #selector(goToFourthQuizVC), for: .touchUpInside)
+        button.addTarget(self, action: #selector(goToPasswordVC), for: .touchUpInside)
         return button
     }()
     
@@ -49,22 +49,22 @@ class ThirdQuizViewController: BaseViewController {
         self.navigationItem.largeTitleDisplayMode = .automatic
         self.navigationController?.navigationBar.tintColor = UIColor.black
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        self.title = "Agora a renda mensal"
+        self.title = "Qual a sua idade?"
         self.navigationController?.navigationBar.barTintColor = .white
         navigationController?.navigationBar.shadowImage = UIImage()
         setupNavigationMultilineTitle()
         
-        incomeTextField.becomeFirstResponder()
+        ageTextField.becomeFirstResponder()
         view.backgroundColor = .white
         view.addSubview(headerLabel)
-        view.addSubview(incomeTextField)
+        view.addSubview(ageTextField)
         view.addSubview(lineCpfView)
         view.addSubview(nextButton)
     }
     
-    @objc func goToFourthQuizVC(sender: UIButton!) {
-        let fq = FourthQuizViewController()
-        self.navigationController?.pushViewController(fq, animated: true)
+    @objc func goToPasswordVC(sender: UIButton!) {
+        let passVC = PasswordViewController()
+        self.navigationController?.pushViewController(passVC, animated: true)
     }
     override func setupConstraints() {
         
@@ -76,8 +76,8 @@ class ThirdQuizViewController: BaseViewController {
             make.right.equalToSuperview().offset(-35)
         }
         
-        // MARK: incomeTextField
-        incomeTextField.snp.makeConstraints { (make) in
+        // MARK: ageTextField
+        ageTextField.snp.makeConstraints { (make) in
             make.top.equalTo(headerLabel.snp.bottom)
             make.left.equalToSuperview().offset(35)
             make.right.equalToSuperview().offset(-35)
@@ -85,7 +85,7 @@ class ThirdQuizViewController: BaseViewController {
         }
         // MARK: lineCpfView
         lineCpfView.snp.makeConstraints { make in
-            make.bottom.equalTo(incomeTextField.snp.bottom)
+            make.bottom.equalTo(ageTextField.snp.bottom)
             make.left.equalToSuperview().offset(35)
             make.right.equalToSuperview().offset(-35)
             make.height.equalTo(1)
