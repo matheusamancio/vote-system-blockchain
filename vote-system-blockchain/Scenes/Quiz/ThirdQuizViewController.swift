@@ -42,6 +42,24 @@ class ThirdQuizViewController: BaseViewController {
         return button
     }()
     
+    private let infoimage: UIImageView = {
+        let iv = UIImageView()
+        iv.layer.masksToBounds = true
+        iv.contentMode = .scaleAspectFill
+        iv.image = #imageLiteral(resourceName: "info")
+        return iv
+    }()
+    
+    private let messageLabel: UILabel = {
+        let l = UILabel.miniText()
+        l.textColor = .black
+        l.numberOfLines = 2
+        l.textAlignment = .left
+        l.text = "Renda mensal familiar é a soma de todas \nos salários do seu grupo familiar no mês"
+        return l
+    }()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +78,10 @@ class ThirdQuizViewController: BaseViewController {
         view.addSubview(incomeTextField)
         view.addSubview(lineCpfView)
         view.addSubview(nextButton)
+        view.addSubview(infoimage)
+        view.addSubview(messageLabel)
+
+
     }
     
     @objc func goToFourthQuizVC(sender: UIButton!) {
@@ -91,9 +113,23 @@ class ThirdQuizViewController: BaseViewController {
             make.height.equalTo(1)
         }
         
+        //MARK: infoimage
+        infoimage.snp.makeConstraints { (make) in
+            make.left.equalToSuperview().offset(20)
+            make.bottom.equalTo(nextButton.snp.top).offset(-50)
+            make.height.equalTo(20)
+            make.width.equalTo(20)
+        }
+        
+        //MARK: messageLabel
+        messageLabel.snp.makeConstraints { (make) in
+            make.left.equalTo(infoimage.snp.right).offset(12)
+            make.centerY.equalTo(infoimage.snp.centerY)
+        }
+        
         //MARK: nextButton
         nextButton.snp.makeConstraints { (make) in
-            make.top.equalTo(lineCpfView.snp.bottom).offset(44)
+            make.top.equalTo(lineCpfView.snp.bottom).offset(100)
             make.left.equalToSuperview().offset(35)
             make.right.equalToSuperview().offset(-35)
             make.height.equalTo(50)
