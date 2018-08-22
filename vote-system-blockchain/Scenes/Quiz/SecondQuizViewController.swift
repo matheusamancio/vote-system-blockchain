@@ -44,7 +44,7 @@ class SecondQuizViewController:  BaseViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        goToCandidate()
+        goToThird()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -59,9 +59,9 @@ class SecondQuizViewController:  BaseViewController, UITableViewDelegate, UITabl
         // Dispose of any resources that can be recreated.
     }
     
-    func goToCandidate(){
-        let cpf = CpfViewController()
-        self.navigationController?.pushViewController(cpf, animated: true)
+    func goToThird(){
+        let tq = ThirdQuizViewController()
+        self.navigationController?.pushViewController(tq, animated: true)
         
     }
     
