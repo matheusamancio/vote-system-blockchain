@@ -1,28 +1,29 @@
 //
-//  SecondQuizViewController.swift
+//  FifthQuizViewController.swift
 //  vote-system-blockchain
 //
-//  Created by Matheus Amancio Seixeiro on 21/08/2018.
+//  Created by Matheus Amancio Seixeiro on 23/08/2018.
 //  Copyright © 2018 Matheus Amancio Seixeiro. All rights reserved.
 //
 
 import UIKit
 
-class SecondQuizViewController:  BaseViewController, UITableViewDelegate, UITableViewDataSource  {
-
+class FifthQuizViewController:  BaseViewController, UITableViewDelegate, UITableViewDataSource  {
+    
     
     var arrayAlternatives: [String] = []
-    let a1 = "Branca"
-    let a2 = "Preta"
-    let a3 = "Amarela"
-    let a4 = "Parda"
-    let a5 = "Indígena"
+    let a1 = "Eng. Elétrica"
+    let a2 = "Eng. Produção"
+    let a3 = "Eng. Civil"
+    let a4 = "Eng. Materiais"
+    let a5 = "Eng. Mecânica"
+    let a6 = "Química"
     
     private let tableView: UITableView = {
         let tb = UITableView()
         tb.backgroundColor = .white
-        tb.rowHeight = 77
-        tb.register(SecondQuizTableCell.self, forCellReuseIdentifier: "SecondQuizTableCell")
+        tb.rowHeight = 65
+        tb.register(FifthQuizTableCell.self, forCellReuseIdentifier: "FifthQuizTableCell")
         tb.separatorColor = .clear
         tb.delegate = nil
         tb.dataSource = nil
@@ -44,8 +45,8 @@ class SecondQuizViewController:  BaseViewController, UITableViewDelegate, UITabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        arrayAlternatives = [a1,a2,a3,a4,a5]
-        self.title = "Raça"
+        arrayAlternatives = [a1,a2,a3,a4,a5,a6]
+        self.title = "Qual seu curso?"
         tableView.dataSource = self
         tableView.delegate = self
         view.addSubview(tableView)
@@ -58,7 +59,7 @@ class SecondQuizViewController:  BaseViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath)  as? SecondQuizTableCell
+        let cell = tableView.cellForRow(at: indexPath)  as? FifthQuizTableCell
         cell?.alternativeLabel.textColor = UIColor.buttonColor()
         cell?.alternativeLabel.font = UIFont.selected
         cell?.selectView.backgroundColor = UIColor.buttonColor()
@@ -66,7 +67,7 @@ class SecondQuizViewController:  BaseViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath)  as? SecondQuizTableCell
+        let cell = tableView.cellForRow(at: indexPath)  as? FifthQuizTableCell
         cell?.alternativeLabel.textColor = UIColor.gray
         cell?.alternativeLabel.font = UIFont.unselected
         cell?.selectView.backgroundColor = UIColor.white
@@ -76,12 +77,12 @@ class SecondQuizViewController:  BaseViewController, UITableViewDelegate, UITabl
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SecondQuizTableCell", for: indexPath as IndexPath) as? SecondQuizTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FifthQuizTableCell", for: indexPath as IndexPath) as? FifthQuizTableCell
         cell?.alternativeLabel.text = arrayAlternatives[indexPath.row]
         return cell!
     }
     
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

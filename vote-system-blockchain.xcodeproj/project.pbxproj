@@ -12,6 +12,8 @@
 		DD02674621016FEF004D5125 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD02674521016FEF004D5125 /* Extensions.swift */; };
 		DD0C725F20A75E23009F82EB /* LabelStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C725E20A75E23009F82EB /* LabelStyles.swift */; };
 		DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C726020A75E4F009F82EB /* FontStyles.swift */; };
+		DD3BC7C8212F55F200DB0DF0 /* FifthQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BC7C7212F55F100DB0DF0 /* FifthQuizViewController.swift */; };
+		DD3BC7CA212F567D00DB0DF0 /* FifthQuizTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BC7C9212F567D00DB0DF0 /* FifthQuizTableCell.swift */; };
 		DD3D028B2126283A002C2FE2 /* FirstQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3D028A2126283A002C2FE2 /* FirstQuizViewController.swift */; };
 		DD40A4862125238400C135B2 /* ConfirmPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40A4852125238400C135B2 /* ConfirmPassViewController.swift */; };
 		DD40A4892125279600C135B2 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40A4882125279600C135B2 /* NameViewController.swift */; };
@@ -47,6 +49,8 @@
 		DD02674521016FEF004D5125 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DD0C725E20A75E23009F82EB /* LabelStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyles.swift; sourceTree = "<group>"; };
 		DD0C726020A75E4F009F82EB /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
+		DD3BC7C7212F55F100DB0DF0 /* FifthQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthQuizViewController.swift; sourceTree = "<group>"; };
+		DD3BC7C9212F567D00DB0DF0 /* FifthQuizTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthQuizTableCell.swift; sourceTree = "<group>"; };
 		DD3D028A2126283A002C2FE2 /* FirstQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstQuizViewController.swift; sourceTree = "<group>"; };
 		DD40A4852125238400C135B2 /* ConfirmPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPassViewController.swift; sourceTree = "<group>"; };
 		DD40A4882125279600C135B2 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 				DDC7D040212D0A4D0060D18A /* SecondQuizTableCell.swift */,
 				DDC7D042212D0EC40060D18A /* ThirdQuizViewController.swift */,
 				DDC7D044212D10160060D18A /* FourthQuizViewController.swift */,
+				DD3BC7C7212F55F100DB0DF0 /* FifthQuizViewController.swift */,
+				DD3BC7C9212F567D00DB0DF0 /* FifthQuizTableCell.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -399,7 +405,9 @@
 				DD02674621016FEF004D5125 /* Extensions.swift in Sources */,
 				DD66ECE1212614FF00BA8C99 /* QuizViewController.swift in Sources */,
 				DDE903E620A549BE00EE3A54 /* CpfViewController.swift in Sources */,
+				DD3BC7CA212F567D00DB0DF0 /* FifthQuizTableCell.swift in Sources */,
 				DD7BA1832105142900AA748D /* OnboardingController.swift in Sources */,
+				DD3BC7C8212F55F200DB0DF0 /* FifthQuizViewController.swift in Sources */,
 				DD40A4862125238400C135B2 /* ConfirmPassViewController.swift in Sources */,
 				DDEE2AD1210E0E2200CF85A5 /* BaseTableViewCell.swift in Sources */,
 				DD7BA185210514F000AA748D /* TutorialViewController.swift in Sources */,

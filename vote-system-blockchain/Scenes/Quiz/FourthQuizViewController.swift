@@ -38,7 +38,7 @@ class FourthQuizViewController: BaseViewController {
         button.titleLabel?.textAlignment = .center
         button.backgroundColor = UIColor.buttonColor()
         button.layer.cornerRadius = 4
-        button.addTarget(self, action: #selector(goToPasswordVC), for: .touchUpInside)
+        button.addTarget(self, action: #selector(goToFifthQuizVC), for: .touchUpInside)
         return button
     }()
     
@@ -62,9 +62,9 @@ class FourthQuizViewController: BaseViewController {
         view.addSubview(nextButton)
     }
     
-    @objc func goToPasswordVC(sender: UIButton!) {
-        let passVC = PasswordViewController()
-        self.navigationController?.pushViewController(passVC, animated: true)
+    @objc func goToFifthQuizVC(sender: UIButton!) {
+        let fq = FifthQuizViewController()
+        self.navigationController?.pushViewController(fq, animated: true)
     }
     override func setupConstraints() {
         
