@@ -70,6 +70,17 @@ extension UILabel {
         return l
     }
     
+    static func selected() -> UILabel {
+        let l = UILabel()
+        l.font = UIFont.selected
+        return l
+    }
+    
+    static func unselected() -> UILabel {
+        let l = UILabel()
+        l.font = UIFont.unselected
+        return l
+    }
     
     
     

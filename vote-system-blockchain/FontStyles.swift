@@ -12,6 +12,8 @@ import UIKit
 
 extension UIFont {
     static let title: UIFont = UIFont.boldSystemFont(ofSize: 30)
+    static let unselected: UIFont = systemFont(ofSize: 30, weight: .light)
+    static let selected: UIFont = UIFont.boldSystemFont(ofSize: 30)
     static let subtitle: UIFont = systemFont(ofSize: 20)
     static let importantInfo: UIFont = boldSystemFont(ofSize: 30)
     static let text: UIFont = systemFont(ofSize: 17, weight: .light)
