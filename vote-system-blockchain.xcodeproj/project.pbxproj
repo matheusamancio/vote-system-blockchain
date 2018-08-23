@@ -14,6 +14,8 @@
 		DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C726020A75E4F009F82EB /* FontStyles.swift */; };
 		DD3BC7C8212F55F200DB0DF0 /* FifthQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BC7C7212F55F100DB0DF0 /* FifthQuizViewController.swift */; };
 		DD3BC7CA212F567D00DB0DF0 /* FifthQuizTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BC7C9212F567D00DB0DF0 /* FifthQuizTableCell.swift */; };
+		DD3BC7CC212F581500DB0DF0 /* SixthQuizTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BC7CB212F581500DB0DF0 /* SixthQuizTableCell.swift */; };
+		DD3BC7CE212F582E00DB0DF0 /* SixthQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BC7CD212F582E00DB0DF0 /* SixthQuizViewController.swift */; };
 		DD3D028B2126283A002C2FE2 /* FirstQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3D028A2126283A002C2FE2 /* FirstQuizViewController.swift */; };
 		DD40A4862125238400C135B2 /* ConfirmPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40A4852125238400C135B2 /* ConfirmPassViewController.swift */; };
 		DD40A4892125279600C135B2 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40A4882125279600C135B2 /* NameViewController.swift */; };
@@ -51,6 +53,8 @@
 		DD0C726020A75E4F009F82EB /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
 		DD3BC7C7212F55F100DB0DF0 /* FifthQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthQuizViewController.swift; sourceTree = "<group>"; };
 		DD3BC7C9212F567D00DB0DF0 /* FifthQuizTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthQuizTableCell.swift; sourceTree = "<group>"; };
+		DD3BC7CB212F581500DB0DF0 /* SixthQuizTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthQuizTableCell.swift; sourceTree = "<group>"; };
+		DD3BC7CD212F582E00DB0DF0 /* SixthQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthQuizViewController.swift; sourceTree = "<group>"; };
 		DD3D028A2126283A002C2FE2 /* FirstQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstQuizViewController.swift; sourceTree = "<group>"; };
 		DD40A4852125238400C135B2 /* ConfirmPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPassViewController.swift; sourceTree = "<group>"; };
 		DD40A4882125279600C135B2 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				DDC7D044212D10160060D18A /* FourthQuizViewController.swift */,
 				DD3BC7C7212F55F100DB0DF0 /* FifthQuizViewController.swift */,
 				DD3BC7C9212F567D00DB0DF0 /* FifthQuizTableCell.swift */,
+				DD3BC7CD212F582E00DB0DF0 /* SixthQuizViewController.swift */,
+				DD3BC7CB212F581500DB0DF0 /* SixthQuizTableCell.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -388,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD40A4892125279600C135B2 /* NameViewController.swift in Sources */,
+				DD3BC7CE212F582E00DB0DF0 /* SixthQuizViewController.swift in Sources */,
 				DDD8718820F81411005D556D /* CandidatesTableCell.swift in Sources */,
 				DDC7D045212D10160060D18A /* FourthQuizViewController.swift in Sources */,
 				DDD8718620F81383005D556D /* CandidatesViewController.swift in Sources */,
@@ -395,6 +402,7 @@
 				DDC7D041212D0A4D0060D18A /* SecondQuizTableCell.swift in Sources */,
 				DD0C725F20A75E23009F82EB /* LabelStyles.swift in Sources */,
 				DD02674120FE9AA5004D5125 /* ChosenCandidateViewController.swift in Sources */,
+				DD3BC7CC212F581500DB0DF0 /* SixthQuizTableCell.swift in Sources */,
 				DDB87E6920E465D3004207A3 /* PasswordViewController.swift in Sources */,
 				DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */,
 				DD3D028B2126283A002C2FE2 /* FirstQuizViewController.swift in Sources */,

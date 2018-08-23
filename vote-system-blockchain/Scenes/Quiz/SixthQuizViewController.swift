@@ -1,5 +1,5 @@
 //
-//  FifthQuizViewController.swift
+//  SixthQuizViewController.swift
 //  vote-system-blockchain
 //
 //  Created by Matheus Amancio Seixeiro on 23/08/2018.
@@ -8,22 +8,20 @@
 
 import UIKit
 
-class FifthQuizViewController:  BaseViewController, UITableViewDelegate, UITableViewDataSource  {
+class SixthQuizViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource  {
     
     
     var arrayAlternatives: [String] = []
-    let a1 = "Eng. Elétrica"
-    let a2 = "Eng. Produção"
-    let a3 = "Eng. Civil"
-    let a4 = "Eng. Materiais"
-    let a5 = "Eng. Mecânica"
-    let a6 = "Química"
+    let a1 = "Matutino"
+    let a2 = "Vespertino"
+    let a3 = "Noturno"
+
     
     private let tableView: UITableView = {
         let tb = UITableView()
         tb.backgroundColor = .white
         tb.rowHeight = 65
-        tb.register(FifthQuizTableCell.self, forCellReuseIdentifier: "FifthQuizTableCell")
+        tb.register(SixthQuizTableCell.self, forCellReuseIdentifier: "SixthQuizTableCell")
         tb.separatorColor = .clear
         tb.delegate = nil
         tb.dataSource = nil
@@ -39,14 +37,14 @@ class FifthQuizViewController:  BaseViewController, UITableViewDelegate, UITable
         button.titleLabel?.textAlignment = .center
         button.backgroundColor = UIColor.buttonColor()
         button.layer.cornerRadius = 4
-        button.addTarget(self, action: #selector(goTosixth), for: .touchUpInside)
+        button.addTarget(self, action: #selector(goToThird), for: .touchUpInside)
         return button
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        arrayAlternatives = [a1,a2,a3,a4,a5,a6]
-        self.title = "Qual seu curso?"
+        arrayAlternatives = [a1,a2,a3]
+        self.title = "Período que estuda"
         tableView.dataSource = self
         tableView.delegate = self
         view.addSubview(tableView)
@@ -59,7 +57,7 @@ class FifthQuizViewController:  BaseViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath)  as? FifthQuizTableCell
+        let cell = tableView.cellForRow(at: indexPath)  as? SixthQuizTableCell
         cell?.alternativeLabel.textColor = UIColor.buttonColor()
         cell?.alternativeLabel.font = UIFont.selected
         cell?.selectView.backgroundColor = UIColor.buttonColor()
@@ -67,7 +65,7 @@ class FifthQuizViewController:  BaseViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath)  as? FifthQuizTableCell
+        let cell = tableView.cellForRow(at: indexPath)  as? SixthQuizTableCell
         cell?.alternativeLabel.textColor = UIColor.gray
         cell?.alternativeLabel.font = UIFont.unselected
         cell?.selectView.backgroundColor = UIColor.white
@@ -77,7 +75,7 @@ class FifthQuizViewController:  BaseViewController, UITableViewDelegate, UITable
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FifthQuizTableCell", for: indexPath as IndexPath) as? FifthQuizTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SixthQuizTableCell", for: indexPath as IndexPath) as? SixthQuizTableCell
         cell?.alternativeLabel.text = arrayAlternatives[indexPath.row]
         return cell!
     }
@@ -88,9 +86,9 @@ class FifthQuizViewController:  BaseViewController, UITableViewDelegate, UITable
         // Dispose of any resources that can be recreated.
     }
     
-    @objc func goTosixth(){
-        let sq = SixthQuizViewController()
-        self.navigationController?.pushViewController(sq, animated: true)
+    @objc func goToThird(){
+        let tq = ThirdQuizViewController()
+        self.navigationController?.pushViewController(tq, animated: true)
         
     }
     

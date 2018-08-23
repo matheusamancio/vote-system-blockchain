@@ -38,7 +38,7 @@ class FourthQuizViewController: BaseViewController {
         button.titleLabel?.textAlignment = .center
         button.backgroundColor = UIColor.buttonColor()
         button.layer.cornerRadius = 4
-        button.addTarget(self, action: #selector(goToFifthQuizVC), for: .touchUpInside)
+        button.addTarget(self, action: #selector(goToFifth), for: .touchUpInside)
         return button
     }()
     
@@ -62,7 +62,7 @@ class FourthQuizViewController: BaseViewController {
         view.addSubview(nextButton)
     }
     
-    @objc func goToFifthQuizVC(sender: UIButton!) {
+    @objc func goToFifth(sender: UIButton!) {
         let fq = FifthQuizViewController()
         self.navigationController?.pushViewController(fq, animated: true)
     }
