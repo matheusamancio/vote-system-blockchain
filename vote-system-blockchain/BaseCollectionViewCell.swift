@@ -1,17 +1,18 @@
 //
-//  BaseTableViewCell.swift
+//  BaseCollectionViewCell.swift
 //  vote-system-blockchain
 //
-//  Created by Matheus Amancio Seixeiro on 12/07/2018.
+//  Created by Matheus Amancio Seixeiro on 23/08/2018.
 //  Copyright © 2018 Matheus Amancio Seixeiro. All rights reserved.
 //
 
 import UIKit
 
-class BaseTableViewCell: UITableViewCell {
+class BaseCollectionViewCell: UICollectionViewCell {
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    // MARK: Initializing
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         initialize()
     }
     
@@ -24,5 +25,4 @@ class BaseTableViewCell: UITableViewCell {
     }
     
 }
-
 

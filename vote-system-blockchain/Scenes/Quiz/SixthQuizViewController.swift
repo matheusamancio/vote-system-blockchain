@@ -37,7 +37,7 @@ class SixthQuizViewController: BaseViewController, UITableViewDelegate, UITableV
         button.titleLabel?.textAlignment = .center
         button.backgroundColor = UIColor.buttonColor()
         button.layer.cornerRadius = 4
-        button.addTarget(self, action: #selector(goToThird), for: .touchUpInside)
+        button.addTarget(self, action: #selector(goToSeventh), for: .touchUpInside)
         return button
     }()
     
@@ -86,9 +86,9 @@ class SixthQuizViewController: BaseViewController, UITableViewDelegate, UITableV
         // Dispose of any resources that can be recreated.
     }
     
-    @objc func goToThird(){
-        let tq = ThirdQuizViewController()
-        self.navigationController?.pushViewController(tq, animated: true)
+    @objc func goToSeventh(){
+        let sq = SeventhQuizViewController()
+        self.navigationController?.pushViewController(sq, animated: true)
         
     }
     

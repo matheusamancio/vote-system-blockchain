@@ -16,6 +16,8 @@
 		DD3BC7CA212F567D00DB0DF0 /* FifthQuizTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BC7C9212F567D00DB0DF0 /* FifthQuizTableCell.swift */; };
 		DD3BC7CC212F581500DB0DF0 /* SixthQuizTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BC7CB212F581500DB0DF0 /* SixthQuizTableCell.swift */; };
 		DD3BC7CE212F582E00DB0DF0 /* SixthQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BC7CD212F582E00DB0DF0 /* SixthQuizViewController.swift */; };
+		DD3BC7D0212F59C700DB0DF0 /* SeventhQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BC7CF212F59C700DB0DF0 /* SeventhQuizViewController.swift */; };
+		DD3BC7D2212F5B1400DB0DF0 /* SeventhQuizCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3BC7D1212F5B1400DB0DF0 /* SeventhQuizCollectionCell.swift */; };
 		DD3D028B2126283A002C2FE2 /* FirstQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3D028A2126283A002C2FE2 /* FirstQuizViewController.swift */; };
 		DD40A4862125238400C135B2 /* ConfirmPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40A4852125238400C135B2 /* ConfirmPassViewController.swift */; };
 		DD40A4892125279600C135B2 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40A4882125279600C135B2 /* NameViewController.swift */; };
@@ -33,6 +35,7 @@
 		DDC7D045212D10160060D18A /* FourthQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC7D044212D10160060D18A /* FourthQuizViewController.swift */; };
 		DDD8718620F81383005D556D /* CandidatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8718520F81383005D556D /* CandidatesViewController.swift */; };
 		DDD8718820F81411005D556D /* CandidatesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8718720F81411005D556D /* CandidatesTableCell.swift */; };
+		DDD9EE7A212F5D3100EDD433 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9EE79212F5D3100EDD433 /* BaseCollectionViewCell.swift */; };
 		DDE903E420A549BE00EE3A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE903E320A549BE00EE3A54 /* AppDelegate.swift */; };
 		DDE903E620A549BE00EE3A54 /* CpfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE903E520A549BE00EE3A54 /* CpfViewController.swift */; };
 		DDE903E920A549BE00EE3A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE903E720A549BE00EE3A54 /* Main.storyboard */; };
@@ -55,6 +58,8 @@
 		DD3BC7C9212F567D00DB0DF0 /* FifthQuizTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthQuizTableCell.swift; sourceTree = "<group>"; };
 		DD3BC7CB212F581500DB0DF0 /* SixthQuizTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthQuizTableCell.swift; sourceTree = "<group>"; };
 		DD3BC7CD212F582E00DB0DF0 /* SixthQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthQuizViewController.swift; sourceTree = "<group>"; };
+		DD3BC7CF212F59C700DB0DF0 /* SeventhQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeventhQuizViewController.swift; sourceTree = "<group>"; };
+		DD3BC7D1212F5B1400DB0DF0 /* SeventhQuizCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeventhQuizCollectionCell.swift; sourceTree = "<group>"; };
 		DD3D028A2126283A002C2FE2 /* FirstQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstQuizViewController.swift; sourceTree = "<group>"; };
 		DD40A4852125238400C135B2 /* ConfirmPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPassViewController.swift; sourceTree = "<group>"; };
 		DD40A4882125279600C135B2 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +77,7 @@
 		DDC7D044212D10160060D18A /* FourthQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthQuizViewController.swift; sourceTree = "<group>"; };
 		DDD8718520F81383005D556D /* CandidatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesViewController.swift; sourceTree = "<group>"; };
 		DDD8718720F81411005D556D /* CandidatesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesTableCell.swift; sourceTree = "<group>"; };
+		DDD9EE79212F5D3100EDD433 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		DDE903E020A549BE00EE3A54 /* vote-system-blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vote-system-blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE903E320A549BE00EE3A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDE903E520A549BE00EE3A54 /* CpfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CpfViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +154,8 @@
 				DD3BC7C9212F567D00DB0DF0 /* FifthQuizTableCell.swift */,
 				DD3BC7CD212F582E00DB0DF0 /* SixthQuizViewController.swift */,
 				DD3BC7CB212F581500DB0DF0 /* SixthQuizTableCell.swift */,
+				DD3BC7CF212F59C700DB0DF0 /* SeventhQuizViewController.swift */,
+				DD3BC7D1212F5B1400DB0DF0 /* SeventhQuizCollectionCell.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -269,6 +277,7 @@
 				DD0C725E20A75E23009F82EB /* LabelStyles.swift */,
 				DD0C726020A75E4F009F82EB /* FontStyles.swift */,
 				DD02674521016FEF004D5125 /* Extensions.swift */,
+				DDD9EE79212F5D3100EDD433 /* BaseCollectionViewCell.swift */,
 			);
 			path = "vote-system-blockchain";
 			sourceTree = "<group>";
@@ -407,6 +416,7 @@
 				DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */,
 				DD3D028B2126283A002C2FE2 /* FirstQuizViewController.swift in Sources */,
 				DD02674420FFDD5B004D5125 /* SuccessfulVoteViewController.swift in Sources */,
+				DD3BC7D0212F59C700DB0DF0 /* SeventhQuizViewController.swift in Sources */,
 				DDC7D043212D0EC40060D18A /* ThirdQuizViewController.swift in Sources */,
 				DDB87E6120E45AC3004207A3 /* User.swift in Sources */,
 				DDC7D03F212D09060060D18A /* SecondQuizViewController.swift in Sources */,
@@ -416,6 +426,8 @@
 				DD3BC7CA212F567D00DB0DF0 /* FifthQuizTableCell.swift in Sources */,
 				DD7BA1832105142900AA748D /* OnboardingController.swift in Sources */,
 				DD3BC7C8212F55F200DB0DF0 /* FifthQuizViewController.swift in Sources */,
+				DD3BC7D2212F5B1400DB0DF0 /* SeventhQuizCollectionCell.swift in Sources */,
+				DDD9EE7A212F5D3100EDD433 /* BaseCollectionViewCell.swift in Sources */,
 				DD40A4862125238400C135B2 /* ConfirmPassViewController.swift in Sources */,
 				DDEE2AD1210E0E2200CF85A5 /* BaseTableViewCell.swift in Sources */,
 				DD7BA185210514F000AA748D /* TutorialViewController.swift in Sources */,
