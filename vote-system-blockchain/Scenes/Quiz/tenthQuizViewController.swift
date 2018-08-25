@@ -37,7 +37,7 @@ class tenthQuizViewController:BaseViewController, UITableViewDelegate, UITableVi
         button.titleLabel?.textAlignment = .center
         button.backgroundColor = UIColor.buttonColor()
         button.layer.cornerRadius = 4
-        button.addTarget(self, action: #selector(goToSeventh), for: .touchUpInside)
+        button.addTarget(self, action: #selector(goToHome), for: .touchUpInside)
         return button
     }()
     
@@ -86,9 +86,9 @@ class tenthQuizViewController:BaseViewController, UITableViewDelegate, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
-    @objc func goToSeventh(){
-        let sq = SeventhQuizViewController()
-        self.navigationController?.pushViewController(sq, animated: true)
+    @objc func goToHome(){
+        let home = HomeViewController()
+        self.navigationController?.pushViewController(home, animated: true)
         
     }
     

@@ -18,6 +18,7 @@ extension UIFont {
     static let importantInfo: UIFont = boldSystemFont(ofSize: 30)
     static let text: UIFont = systemFont(ofSize: 17, weight: .light)
     static let minitext: UIFont = systemFont(ofSize: 13, weight: .semibold)
+    static let lighttext: UIFont = systemFont(ofSize: 20, weight: .light)
     static let textField: UIFont = UIFont.boldSystemFont(ofSize: 30)
     static let button: UIFont = UIFont.boldSystemFont(ofSize: 15)
     static let nameCandidate: UIFont = UIFont.boldSystemFont(ofSize: 17)

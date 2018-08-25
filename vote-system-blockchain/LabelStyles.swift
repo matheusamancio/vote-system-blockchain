@@ -82,6 +82,11 @@ extension UILabel {
         return l
     }
     
+    static func lighText() -> UILabel {
+        let l = UILabel()
+        l.font = UIFont.lighttext
+        return l
+    }
     
     
 }

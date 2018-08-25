@@ -14,6 +14,9 @@ extension UIColor{
     class func buttonColor() -> UIColor{
         return UIColor(red: 0/255, green: 132/255, blue: 136/255, alpha: 1)
     }
+    class func labelColor() -> UIColor{
+        return UIColor(red: 72/255, green: 72/255, blue: 72/255, alpha: 1)
+    }
 }
 
 
