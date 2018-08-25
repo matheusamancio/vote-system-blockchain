@@ -36,6 +36,10 @@
 		DDD8718620F81383005D556D /* CandidatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8718520F81383005D556D /* CandidatesViewController.swift */; };
 		DDD8718820F81411005D556D /* CandidatesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8718720F81411005D556D /* CandidatesTableCell.swift */; };
 		DDD9EE7A212F5D3100EDD433 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9EE79212F5D3100EDD433 /* BaseCollectionViewCell.swift */; };
+		DDD9EE7C213199F800EDD433 /* ninthQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9EE7B213199F800EDD433 /* ninthQuizViewController.swift */; };
+		DDD9EE7E21319A2000EDD433 /* tenthQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9EE7D21319A2000EDD433 /* tenthQuizViewController.swift */; };
+		DDD9EE8021319A3F00EDD433 /* ninthQuizTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9EE7F21319A3F00EDD433 /* ninthQuizTableCell.swift */; };
+		DDD9EE8221319A6300EDD433 /* TenthQuizTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9EE8121319A6300EDD433 /* TenthQuizTableCell.swift */; };
 		DDE903E420A549BE00EE3A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE903E320A549BE00EE3A54 /* AppDelegate.swift */; };
 		DDE903E620A549BE00EE3A54 /* CpfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE903E520A549BE00EE3A54 /* CpfViewController.swift */; };
 		DDE903E920A549BE00EE3A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE903E720A549BE00EE3A54 /* Main.storyboard */; };
@@ -78,6 +82,10 @@
 		DDD8718520F81383005D556D /* CandidatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesViewController.swift; sourceTree = "<group>"; };
 		DDD8718720F81411005D556D /* CandidatesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesTableCell.swift; sourceTree = "<group>"; };
 		DDD9EE79212F5D3100EDD433 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		DDD9EE7B213199F800EDD433 /* ninthQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ninthQuizViewController.swift; sourceTree = "<group>"; };
+		DDD9EE7D21319A2000EDD433 /* tenthQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tenthQuizViewController.swift; sourceTree = "<group>"; };
+		DDD9EE7F21319A3F00EDD433 /* ninthQuizTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ninthQuizTableCell.swift; sourceTree = "<group>"; };
+		DDD9EE8121319A6300EDD433 /* TenthQuizTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenthQuizTableCell.swift; sourceTree = "<group>"; };
 		DDE903E020A549BE00EE3A54 /* vote-system-blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vote-system-blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE903E320A549BE00EE3A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDE903E520A549BE00EE3A54 /* CpfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CpfViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +164,10 @@
 				DD3BC7CB212F581500DB0DF0 /* SixthQuizTableCell.swift */,
 				DD3BC7CF212F59C700DB0DF0 /* SeventhQuizViewController.swift */,
 				DD3BC7D1212F5B1400DB0DF0 /* SeventhQuizCollectionCell.swift */,
+				DDD9EE7B213199F800EDD433 /* ninthQuizViewController.swift */,
+				DDD9EE7D21319A2000EDD433 /* tenthQuizViewController.swift */,
+				DDD9EE7F21319A3F00EDD433 /* ninthQuizTableCell.swift */,
+				DDD9EE8121319A6300EDD433 /* TenthQuizTableCell.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -407,6 +419,7 @@
 				DDD8718820F81411005D556D /* CandidatesTableCell.swift in Sources */,
 				DDC7D045212D10160060D18A /* FourthQuizViewController.swift in Sources */,
 				DDD8718620F81383005D556D /* CandidatesViewController.swift in Sources */,
+				DDD9EE8021319A3F00EDD433 /* ninthQuizTableCell.swift in Sources */,
 				DD9C8C0F20F5839D00E5579D /* PrivateKeyViewController.swift in Sources */,
 				DDC7D041212D0A4D0060D18A /* SecondQuizTableCell.swift in Sources */,
 				DD0C725F20A75E23009F82EB /* LabelStyles.swift in Sources */,
@@ -414,10 +427,12 @@
 				DD3BC7CC212F581500DB0DF0 /* SixthQuizTableCell.swift in Sources */,
 				DDB87E6920E465D3004207A3 /* PasswordViewController.swift in Sources */,
 				DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */,
+				DDD9EE7E21319A2000EDD433 /* tenthQuizViewController.swift in Sources */,
 				DD3D028B2126283A002C2FE2 /* FirstQuizViewController.swift in Sources */,
 				DD02674420FFDD5B004D5125 /* SuccessfulVoteViewController.swift in Sources */,
 				DD3BC7D0212F59C700DB0DF0 /* SeventhQuizViewController.swift in Sources */,
 				DDC7D043212D0EC40060D18A /* ThirdQuizViewController.swift in Sources */,
+				DDD9EE7C213199F800EDD433 /* ninthQuizViewController.swift in Sources */,
 				DDB87E6120E45AC3004207A3 /* User.swift in Sources */,
 				DDC7D03F212D09060060D18A /* SecondQuizViewController.swift in Sources */,
 				DD02674621016FEF004D5125 /* Extensions.swift in Sources */,
@@ -434,6 +449,7 @@
 				DDB87E6320E45BF3004207A3 /* Candidate.swift in Sources */,
 				DDE903E420A549BE00EE3A54 /* AppDelegate.swift in Sources */,
 				DDB6FB0620A54DB300BFA276 /* BaseViewController.swift in Sources */,
+				DDD9EE8221319A6300EDD433 /* TenthQuizTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

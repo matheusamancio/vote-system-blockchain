@@ -51,7 +51,7 @@ class SeventhQuizViewController: BaseViewController, UICollectionViewDelegate, U
         button.titleLabel?.textAlignment = .center
         button.backgroundColor = UIColor.buttonColor()
         button.layer.cornerRadius = 4
-        button.addTarget(self, action: #selector(goToThird), for: .touchUpInside)
+        button.addTarget(self, action: #selector(goToNinth), for: .touchUpInside)
         return button
     }()
     
@@ -87,9 +87,9 @@ class SeventhQuizViewController: BaseViewController, UICollectionViewDelegate, U
         // Dispose of any resources that can be recreated.
     }
     
-    @objc func goToThird(){
-        let tq = ThirdQuizViewController()
-        self.navigationController?.pushViewController(tq, animated: true)
+    @objc func goToNinth(){
+        let nq = ninthQuizViewController()
+        self.navigationController?.pushViewController(nq, animated: true)
         
     }
     
