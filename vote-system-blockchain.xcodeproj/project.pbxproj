@@ -41,6 +41,7 @@
 		DDD9EE8021319A3F00EDD433 /* ninthQuizTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9EE7F21319A3F00EDD433 /* ninthQuizTableCell.swift */; };
 		DDD9EE8221319A6300EDD433 /* TenthQuizTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9EE8121319A6300EDD433 /* TenthQuizTableCell.swift */; };
 		DDD9EE8521319CDB00EDD433 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9EE8421319CDB00EDD433 /* HomeViewController.swift */; };
+		DDD9EE882131A37A00EDD433 /* NumberCandidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9EE872131A37A00EDD433 /* NumberCandidateViewController.swift */; };
 		DDE903E420A549BE00EE3A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE903E320A549BE00EE3A54 /* AppDelegate.swift */; };
 		DDE903E620A549BE00EE3A54 /* CpfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE903E520A549BE00EE3A54 /* CpfViewController.swift */; };
 		DDE903E920A549BE00EE3A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE903E720A549BE00EE3A54 /* Main.storyboard */; };
@@ -88,6 +89,7 @@
 		DDD9EE7F21319A3F00EDD433 /* ninthQuizTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ninthQuizTableCell.swift; sourceTree = "<group>"; };
 		DDD9EE8121319A6300EDD433 /* TenthQuizTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenthQuizTableCell.swift; sourceTree = "<group>"; };
 		DDD9EE8421319CDB00EDD433 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DDD9EE872131A37A00EDD433 /* NumberCandidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCandidateViewController.swift; sourceTree = "<group>"; };
 		DDE903E020A549BE00EE3A54 /* vote-system-blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vote-system-blockchain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE903E320A549BE00EE3A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDE903E520A549BE00EE3A54 /* CpfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CpfViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		DD9C8C0C20F5833300E5579D /* VoteFlow */ = {
 			isa = PBXGroup;
 			children = (
+				DDD9EE862131A35900EDD433 /* NumberCandidate */,
 				DD02674220FFDD22004D5125 /* Vote Successful */,
 				DD02673F20FE9A82004D5125 /* Chosen Candidate */,
 				DDD8718420F81368005D556D /* Candidates */,
@@ -265,6 +268,14 @@
 				DDD9EE8421319CDB00EDD433 /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		DDD9EE862131A35900EDD433 /* NumberCandidate */ = {
+			isa = PBXGroup;
+			children = (
+				DDD9EE872131A37A00EDD433 /* NumberCandidateViewController.swift */,
+			);
+			path = NumberCandidate;
 			sourceTree = "<group>";
 		};
 		DDE903D720A549BE00EE3A54 = {
@@ -436,6 +447,7 @@
 				DDC7D041212D0A4D0060D18A /* SecondQuizTableCell.swift in Sources */,
 				DD0C725F20A75E23009F82EB /* LabelStyles.swift in Sources */,
 				DD02674120FE9AA5004D5125 /* ChosenCandidateViewController.swift in Sources */,
+				DDD9EE882131A37A00EDD433 /* NumberCandidateViewController.swift in Sources */,
 				DD3BC7CC212F581500DB0DF0 /* SixthQuizTableCell.swift in Sources */,
 				DDB87E6920E465D3004207A3 /* PasswordViewController.swift in Sources */,
 				DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */,
