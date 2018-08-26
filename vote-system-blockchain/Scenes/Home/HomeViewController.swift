@@ -123,8 +123,11 @@ class HomeViewController: BaseViewController {
         
     }
     @objc func goToCandidates(sender: UIButton!) {
-        let canVC = CandidatesViewController()
-        self.navigationController?.pushViewController(canVC, animated: true)
+
+        self.tabBarController?.selectedIndex = 1
+//
+//        let canVC = CandidatesViewController()
+//        self.navigationController?.pushViewController(canVC, animated: true)
     }
     
     @objc func goTovote(sender: UIButton!) {
