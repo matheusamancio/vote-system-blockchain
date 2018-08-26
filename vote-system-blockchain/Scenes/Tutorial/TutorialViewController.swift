@@ -121,6 +121,8 @@ class TutorialViewController: UIViewController {
         print(#function,"bt pressed")
         let name = NameViewController()
         self.navigationController?.pushViewController(name, animated: true)
+        UserDefaults.standard.set(true, forKey: "TutorialOff")
     }
+
     
 }
