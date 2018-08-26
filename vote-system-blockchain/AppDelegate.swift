@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         if let window = window{
-            let mainVC = NumberCandidateViewController()
+            let mainVC = VoteTabBarController()
 //            let mainVC = OnboardingController()
             navigationController = UINavigationController(rootViewController: mainVC)
             window.rootViewController = navigationController

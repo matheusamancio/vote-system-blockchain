@@ -29,6 +29,7 @@
 		DDB87E6120E45AC3004207A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB87E6020E45AC3004207A3 /* User.swift */; };
 		DDB87E6320E45BF3004207A3 /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB87E6220E45BF3004207A3 /* Candidate.swift */; };
 		DDB87E6920E465D3004207A3 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB87E6820E465D3004207A3 /* PasswordViewController.swift */; };
+		DDB899A72133220F00578295 /* VoteTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB899A62133220F00578295 /* VoteTabBarController.swift */; };
 		DDC7D03F212D09060060D18A /* SecondQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC7D03E212D09060060D18A /* SecondQuizViewController.swift */; };
 		DDC7D041212D0A4D0060D18A /* SecondQuizTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC7D040212D0A4D0060D18A /* SecondQuizTableCell.swift */; };
 		DDC7D043212D0EC40060D18A /* ThirdQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC7D042212D0EC40060D18A /* ThirdQuizViewController.swift */; };
@@ -77,6 +78,7 @@
 		DDB87E6020E45AC3004207A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DDB87E6220E45BF3004207A3 /* Candidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidate.swift; sourceTree = "<group>"; };
 		DDB87E6820E465D3004207A3 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		DDB899A62133220F00578295 /* VoteTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteTabBarController.swift; sourceTree = "<group>"; };
 		DDC7D03E212D09060060D18A /* SecondQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuizViewController.swift; sourceTree = "<group>"; };
 		DDC7D040212D0A4D0060D18A /* SecondQuizTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuizTableCell.swift; sourceTree = "<group>"; };
 		DDC7D042212D0EC40060D18A /* ThirdQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdQuizViewController.swift; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 				DDB87E6420E4604D004207A3 /* Scenes */,
 				DDB87E5F20E45A59004207A3 /* Models */,
 				DDE903E320A549BE00EE3A54 /* AppDelegate.swift */,
+				DDB899A62133220F00578295 /* VoteTabBarController.swift */,
 				DDE903E720A549BE00EE3A54 /* Main.storyboard */,
 				DDE903EA20A549C000EE3A54 /* Assets.xcassets */,
 				DDE903EC20A549C000EE3A54 /* LaunchScreen.storyboard */,
@@ -449,6 +452,7 @@
 				DD02674120FE9AA5004D5125 /* ChosenCandidateViewController.swift in Sources */,
 				DDD9EE882131A37A00EDD433 /* NumberCandidateViewController.swift in Sources */,
 				DD3BC7CC212F581500DB0DF0 /* SixthQuizTableCell.swift in Sources */,
+				DDB899A72133220F00578295 /* VoteTabBarController.swift in Sources */,
 				DDB87E6920E465D3004207A3 /* PasswordViewController.swift in Sources */,
 				DD0C726120A75E4F009F82EB /* FontStyles.swift in Sources */,
 				DDD9EE7E21319A2000EDD433 /* tenthQuizViewController.swift in Sources */,

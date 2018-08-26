@@ -45,7 +45,7 @@ class HomeViewController: BaseViewController {
         button.titleLabel?.textAlignment = .center
         button.backgroundColor = UIColor.buttonColor()
         button.layer.cornerRadius = 4
-        button.addTarget(self, action: #selector(goToCandidates), for: .touchUpInside)
+        button.addTarget(self, action: #selector(goTovote), for: .touchUpInside)
         return button
     }()
     
@@ -125,6 +125,11 @@ class HomeViewController: BaseViewController {
     @objc func goToCandidates(sender: UIButton!) {
         let canVC = CandidatesViewController()
         self.navigationController?.pushViewController(canVC, animated: true)
+    }
+    
+    @objc func goTovote(sender: UIButton!) {
+        let numVC = NumberCandidateViewController()
+        self.navigationController?.pushViewController(numVC, animated: true)
     }
     
 }
